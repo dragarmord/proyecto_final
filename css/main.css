@@ -238,7 +238,20 @@ nav ul li {
    Author's custom styles
    ========================================================================== */
 
+.seccion1 {
+    overflow: auto;
+}
 
+.personalInfo1 {
+    width: 50%;
+    float: left;
+}
+
+
+.personalInfo2 {
+    width: 50%
+    float: right;
+}
 
 
 
