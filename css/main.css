@@ -198,10 +198,12 @@ nav ul li {
 
 .pull-left {
     float: left;
+    display: block;
 }
 
 .pull-right {
     float: right;
+    display: block;
 }
 
 /* ==============
