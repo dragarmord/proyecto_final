@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  display: none;
+}
+
+nav ul li a{
+  color: #fff;
+  font-size: 22px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+nav ul li {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.pull-left {
+  float: left;
+  display: block;
+}
+
+.pull-right {
+  float: right;
+  display: block;
+}
+
+.seccion1 > div {
+  width: 50%;
+  float: left;
+}
+
+#alfre {
+  height: 30px;
+}
