@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Arenal Backpackers Bookings</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,6 +29,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <!-- ALFRE.... NO HAY CONTENEDOR GENERAL? SOLO EL BODY?-->
+
         <div class="header-container">
             <header class="wrapper clearfix">
                 <nav>
@@ -38,8 +40,8 @@
 					</div>
 					<ul class="navList">
 						<li><a href="#">Home</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Costa Rica Hostel Network</a></li>
+						<li><a href="aboutUs.html">About Us</a></li>
+						<li><a href="http://costaricahostelnetwork.com/">Costa Rica Hostel Network</a></li>
 						<li><a href="http://mail.yahoo.com">Mail</a></li>
 						<li><a href="#">Bookings</a></li>
 					</ul>
@@ -50,18 +52,20 @@
 				</form>
 				
             </header>
-            
-        <div class="banner">
 
-            </div>
-                <img src="img/arenalBanner.jpg">
-            </div>
+        </div>
+
+        <div class="banner">
+            <img src="img/arenalBanner.jpg">
+        </div>
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-                <h1>Booking Information:</h1>
+                <h1>Booking Information</h1>
+
+                <form action="">
                 
-                <div class="seccion1 clearfix">
+                <div class="section1 clearfix">
                     <div class="personalInfo1">
                         <table>
                             <tr>
@@ -136,8 +140,8 @@
                                 <td>
                                     <label for="n_nights">Number of Nights</label>
                                 </td>
-                                <td> 
-                                    <input type="text" id="n_nights" tabindex="20" /> 
+                                <td>
+                                    <input type="text" id="n_nights" tabindex="20" />
                                 </td>
                             </tr>
 
@@ -146,7 +150,7 @@
                                     <label for="chk_in_date">Check In Date</label>
                                 </td>
                                 <td>
-                                    <input name="checkInDate" type="date" />
+                                    <input name="checkInDate" id="chk_in_date" type="date" />
                                 </td>
                             </tr>
 
@@ -164,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="seccion2 clearfix">
+                <div class="section2 clearfix">
                     <div class="typeRoom">
                     <h2>Type of Room</h2>
                         <table>
@@ -218,31 +222,279 @@
 
                                 <td>
                                     <select id="dorm">
-                                        <option value="mDorm">8 Bed Mixed Dorm</option>
-                                        <option value="fDorm">8 Bed Female Dorm</option>
+                                        <option value="dorm1">8 Bed Mixed Dorm</option>
+                                        <option value="dorm2">8 Bed Female Dorm</option>
                                     </select>
                                 </td>
                             </tr>
 
+                            <tr>
+                                <td>
+                                    <label for="price">Price</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="price" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="paymentType">Payment Type</label>
+                                </td>
+
+                                <td>
+                                    <select id="paymentType">
+                                        <option value="paymentType1">Per Room</option>
+                                        <option value="paymentType2">Per Night</option>
+                                        <option value="paymentType3">Per Person/Per Night</option>
+                                        <option value="paymentType4">Total</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!--<tr>-->
+                                <!--<td>-->
+                                    <!--<label for="nBeds">Number of Beds</label>-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                    <!--<input type="number" id="nBeds" tabindex="20" />-->
+                                <!--</td>-->
+                            <!--</tr>-->
+
+                            <tr>
+                                <td>
+                                    <label for="tBeds">Type of Beds</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="tBeds" value="tBeds1"> 1 Single Bed
+                                    <input type="checkbox" id="tBeds" value="tBeds2"> 1 Double Bed
+                                    <input type="checkbox" id="tBeds" value="tBeds3"> 2 Double Beds
+                                </td>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" id="tBeds" value="tBeds4"> 3 Single Beds
+                                    <input type="checkbox" id="tBeds" value="tBeds5"> 1 Extra Mattress
+                                    <input type="checkbox" id="tBeds" value="tBeds6"> 2 Extra Mattress
+                                </td>
+                            </tr>
                         </table>
-                    <div class="crd_card"></div>
+                    </div>
+
+
+                    <div class="crd_card">
+                        <h2>Credit Card Information</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="typeCC">Type of Credit Card</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="typeCC" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="ccName">Name</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="ccName" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="ccNum">Number</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="ccNum" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="ccExp">Expires</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="ccExp" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="ccSecurity">Security Code</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="ccSecurity" tabindex="20" />
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
                 </div>
 
-                <div class="seccion3 clearfix">
-                    <div class="personalInfo1"></div>
-                    <div class="personalInfo2"></div>
+                <div class="section3 clearfix">
+                    <div class="shuttleInfo">
+                        <H2>Shuttle Information</H2>
+                        <table>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttleDate">Date</label>
+                                </td>
+                                <td>
+                                    <input name="checkInDate" id="shuttleDate" type="date" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttleWhere">Where</label>
+                                </td>
+                                <td>
+                                    <select id="shuttleWhere">
+                                        <option value="shuttleWhere1">In</option>
+                                        <option value="shuttleWhere1">Out</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttleFrom">From</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="shuttleFrom" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttleTo">To</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="shuttleTo" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttlePeople">Number of People</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="shuttlePeople" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttlePrice">Price Per Person</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="shuttlePrice" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttleCompany">Company</label>
+                                </td>
+
+                                <td>
+                                    <select id="shuttleCompany">
+                                        <option value="shuttleCompany1">Interbus</option>
+                                        <option value="shuttleCompany2">Ride CR</option>
+                                        <option value="shuttleCompany3">Private</option>
+                                    </select>
+                                    <input type="text" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttleTime">Pick-up Time</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="shuttleTime" tabindex="20" />
+                                    <!-- NECESITO K SEA FORMAT EN HORAS -->
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="flightInfo">
+                        <H2>Flight Information (Only if Private Shuttle)</H2>
+                        <Table>
+                            <tr>
+                                <td>
+                                    <label for="flightAirport">Airport</label>
+                                </td>
+
+                                <td>
+                                    <select id="flightAirport">
+                                        <option value="flightAirport1">SJO Airport</option>
+                                        <option value="flightAirport2">Liberia</option>
+                                        <option value="flightAirport3">Arenal Airport</option>
+                                    </select>
+                                    <input type="text" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="flightCompany">Airline Company</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="flightCompany" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="flightNum">Flight Number</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="flightNum" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="flightFrom">From</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="flightFrom" tabindex="20" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="flightTime">Arrival Time</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="flightTime" tabindex="20" />
+                                </td>
+                            </tr>
+
+                        </Table>
+                    </div>
+
                 </div>
 
-                <div>
-                     <label for="info">Adittional Information</label>
-                     <textarea name="aditional_info" id="info" cols="50" rows="3" accesskey="o" tabindex="40"></textarea>
+                <div class="section4">
+                    <H2>Aditional Information</H2>
+                    <textarea name="aditional_info" id="info" cols="50" rows="3" accesskey="o" tabindex="40"></textarea>
                 </div>
-                <div class="">
+
+                <div class="btns">
                     <input type="submit" id="send" value="Send" accesskey="v" tabindex="60" />
-                    <input type="reset" id="reset" value="Reset" /> <!-- esta malo -->
+                    <input type="reset" id="reset" value="Reset" />
                 </div>
-                   
 
+                </form>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
