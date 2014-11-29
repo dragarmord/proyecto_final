@@ -36,7 +36,8 @@
   .oldie nav a {
     margin: 0 0.7%;
   }
-}
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -73,7 +74,9 @@
   nav ul li {
     display: inline-block;
     border-bottom: none;
+    /*background-color: #ba421b;*/
   }
+
 
 
 
@@ -106,6 +109,7 @@
 
 /* MI CSS */
 
+
 .menu-bar-mobile {
   /*background-color: black;*/
   border-bottom: 1px solid #fff;
@@ -114,20 +118,22 @@
 
 .menu-bar-mobile span {
   color: white;
-  font-size: 24px;
-  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
   display: block;
   padding: 10px;
 }
 
+.menu-bar-mobile span:hover {
+    color: black;
+}
+
 .toggle-btn {
   cursor: pointer;
+
 }
 
 nav {
   float: left;
 }
-
-#tfnewsearch {
-  float: left;
 }

@@ -14,28 +14,28 @@ nav ul {
 }
 
 nav ul li a{
-  color: #fff;
-  font-size: 22px;
+  /*color: #fff;*/
   font-family: sans-serif;
-  text-decoration: none;
+    display: inline-block;
+    border-bottom: none;
+    padding: 10px;
+
 }
 
+
 nav ul li {
-  padding: 10px;
   border-bottom: 1px solid #fff;
 }
 
 nav a:hover {
-    color: black;
+    color: #ffffff;
+    background-color: rgba(16, 16, 16, 0.84);
+    text-decoration: none;
+
 }
 
 .pull-left {
   float: left;
-  display: block;
-}
-
-.pull-right {
-  float: right;
   display: block;
 }
 
@@ -45,7 +45,7 @@ nav a:hover {
 */
 
 #tfnewsearch{
-    /*float:right;*/
+    float:right;
     margin:10px 0 10px 30px;
 }
 .tftextinput{
@@ -89,30 +89,94 @@ nav a:hover {
 
 
 h1 {
-    margin: 0.67em 0 1.563em 0;
+    margin: 0;
+    padding: 0.67em 0 1.563em 0;
     text-align: center;
+    border-bottom: solid #000000;
 }
 
+span {
+    color: red;
+    font-weight: bold;
+}
+
+.status, .section1, .section2, .section3 {
+    padding-bottom: 20px;
+    border-bottom: solid #000000;
+}
 
 .section1 > div {
   width: 50%;
   float: left;
-    display: block;
     /*margin: 0 0 0 20px;*/
 }
 
 .section2 > div {
     width: 50%;
     float: left;
-    display: block;
     /*padding: 0 0 0 20px;*/
 }
 
 .section3 > div {
     width: 50%;
     float: left;
-    display: block;
     /*margin: 0 0 0 20px;*/
+}
+
+
+.aditionalInfo, .bookedBy {
+    float: left;
+    width: 50%;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.footer-container footer {
+    /*padding: 1.250em 0 0 0;*/
+}
+
+footer div div {
+    padding: 1.250em 0 1.250em 0;
+}
+
+.footer1 {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+footer h2 {
+    margin: 0;
+    text-align: center;
+}
+
+footer h2 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer h2 a:hover {
+    color: #ffffff;
+}
+
+
+footer div div a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 0.250em;
+}
+
+footer div {
+    display: inline-block;
+}
+
+footer div div a:hover {
+    /*color: #000000;*/
+    background-color: rgba(16, 16, 16, 0.84);
+    padding: 20px 0.250em;
 }
 
 #privates {
@@ -120,5 +184,5 @@ h1 {
 }
 
 .btns {
-    margin-top: 20px;
+    margin-top: 30px;
 }

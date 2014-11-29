@@ -35,7 +35,7 @@
             <header class="wrapper clearfix">
                 <nav>
 					<div class="menu-bar-mobile">
-						<span class="pull-right toggle-btn close">Menu</span>
+						<span class="pull-left toggle-btn close">Menu</span>
 						<!-- <span class="">Open</span> -->
 					</div>
 					<ul class="navList">
@@ -48,9 +48,9 @@
 				</nav>
 			
 				<form id="tfnewsearch" method="get" action="http://www.google.com">
-		        	<input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		        	<input type="text" class="tftextinput" name="q" size="17" maxlength="120"><input type="submit" value="search" class="tfbutton">
 				</form>
-				
+
             </header>
 
         </div>
@@ -64,9 +64,42 @@
                 <h1>Booking Information</h1>
 
                 <form action="">
-                
+
+                <div class="status">
+                    <h2>Status</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="statusNew"></label>
+                                <input type="checkbox" id="statusNew" value="status1"> New
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="statusUrgent" value="status2"> Urgent
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="statusPendiente"><span>Pending Reply</span></label>
+                                <select id="statusPendiente">
+                                    <option value="statusPendiente1">Front Desk</option>
+                                    <option value="statusPendiente2">Client</option>
+                                    <option value="statusPendiente3" selected="selected">None</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="statusCanceled" value="status3"> <span>Cancel Reservation</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
                 <div class="section1 clearfix">
-                    <div class="personalInfo1">
+                    <h2>General Information</h2>
+                    <div class="generalInfo1">
                         <table>
                             <tr>
                                 <td>
@@ -97,15 +130,16 @@
                             
                             <tr>
                                 <td>
-                                    <label for="comapny">Booking Company</label>
+                                    <label for="company">Booking Company</label>
                                 </td>
 
                                 <td>
-                                    <select id="comapny">
-                                        <option value="cf">Contact Form</option>
-                                        <option value="Hostelworld">Hostelworld</option>
-                                        <option value="Hostelbookers">Hostelbookers</option>
-                                        <option value="booking">Booking.com</option>
+                                    <select id="company">
+                                        <option value="company1">Contact Form</option>
+                                        <option value="company2">Hostelworld</option>
+                                        <option value="company3">Hostelbookers</option>
+                                        <option value="company4">Booking.com</option>
+                                        <option value="company5" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -116,8 +150,9 @@
                                 </td>
                                 <td>
                                     <select id="season">
-                                        <option value="highSeason">Hight Season</option>
-                                        <option value="lowSeason">Low Season</option>
+                                        <option value="season1">Hight Season</option>
+                                        <option value="season2">Low Season</option>
+                                        <option value="season3" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -125,7 +160,7 @@
                         </table>
                     </div>    
                         
-                    <div class="personalInfo2">
+                    <div class="generalInfo2">
                         <table>
                             <tr>
                                 <td>
@@ -147,7 +182,7 @@
 
                             <tr>
                                 <td>
-                                    <label for="chk_in_date">Check In Date</label>
+                                    <label for="chk_in_date">Check in Date</label>
                                 </td>
                                 <td>
                                     <input name="checkInDate" id="chk_in_date" type="date" />
@@ -156,7 +191,7 @@
 
                             <tr>
                                 <td>
-                                    <label for="chk_in_hour">Check In Hour</label>
+                                    <label for="chk_in_hour">Check in Hour</label>
                                 </td>
                                 <td>
                                     <input name="checkIn" id="chk_in_hour" type="number" />
@@ -195,7 +230,7 @@
                                         <option value="private12">3- Standard Triple with Terrace</option>
 
                                         <option value="private13">4- Deluxe Quad with Private Balcony</option>
-
+                                        <option value="private14" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -211,6 +246,7 @@
                                         <option value="tent2">Deluxe Double Tent</option>
                                         <option value="tent3">Deluxe Triple Tent</option>
                                         <option value="tent4">Deluxe Quadruple Tent</option>
+                                        <option value="tent5" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -224,6 +260,7 @@
                                     <select id="dorm">
                                         <option value="dorm1">8 Bed Mixed Dorm</option>
                                         <option value="dorm2">8 Bed Female Dorm</option>
+                                        <option value="dorm3" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -248,18 +285,12 @@
                                         <option value="paymentType2">Per Night</option>
                                         <option value="paymentType3">Per Person/Per Night</option>
                                         <option value="paymentType4">Total</option>
+                                        <option value="paymentType5" selected="selected">None</option>
+
                                     </select>
                                 </td>
                             </tr>
 
-                            <!--<tr>-->
-                                <!--<td>-->
-                                    <!--<label for="nBeds">Number of Beds</label>-->
-                                <!--</td>-->
-                                <!--<td>-->
-                                    <!--<input type="number" id="nBeds" tabindex="20" />-->
-                                <!--</td>-->
-                            <!--</tr>-->
 
                             <tr>
                                 <td>
@@ -356,7 +387,8 @@
                                 <td>
                                     <select id="shuttleWhere">
                                         <option value="shuttleWhere1">In</option>
-                                        <option value="shuttleWhere1">Out</option>
+                                        <option value="shuttleWhere2">Out</option>
+                                        <option value="shuttleWhere3" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -407,6 +439,7 @@
                                         <option value="shuttleCompany1">Interbus</option>
                                         <option value="shuttleCompany2">Ride CR</option>
                                         <option value="shuttleCompany3">Private</option>
+                                        <option value="shuttleCompany4" selected="selected">None</option>
                                     </select>
                                     <input type="text" tabindex="20" />
                                 </td>
@@ -438,6 +471,7 @@
                                         <option value="flightAirport1">SJO Airport</option>
                                         <option value="flightAirport2">Liberia</option>
                                         <option value="flightAirport3">Arenal Airport</option>
+                                        <option value="flightAirport4" selected="selected">None</option>
                                     </select>
                                     <input type="text" tabindex="20" />
                                 </td>
@@ -484,9 +518,35 @@
 
                 </div>
 
-                <div class="section4">
-                    <H2>Aditional Information</H2>
-                    <textarea name="aditional_info" id="info" cols="50" rows="3" accesskey="o" tabindex="40"></textarea>
+                <div class="section4 clearfix">
+                     <div class="aditionalInfo">
+                        <H2>Aditional Information</H2>
+                        <textarea name="aditional_info" id="info" cols="50" rows="3" accesskey="o" tabindex="40"></textarea>
+                        <div>
+                            <label for="attachment"></label>
+                            <input type="file" id="attachment" />
+                        </div>
+                     </div>
+
+                    <div class="bookedBy clearfix">
+                        <H2>Person Reponsible</H2>
+                        <tr>
+                            <td>
+                                <label for="madeBy">Booked by</label>
+                            </td>
+                            <td>
+                                <select id="madeBy">
+                                    <option value="madeBy1">Allan</option>
+                                    <option value="madeBy2">Alfredo</option>
+                                    <option value="madeBy3">Diego</option>
+                                    <option value="madeBy4">Mieles</option>
+                                    <option value="madeBy5">Nacho</option>
+                                    <option value="madeBy6" selected="selected">None</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </div>
+
                 </div>
 
                 <div class="btns">
@@ -494,13 +554,30 @@
                     <input type="reset" id="reset" value="Reset" />
                 </div>
 
+
+
                 </form>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
+                <h2><a href="#">Costa Rica Hostel Network</a></h2>
+                <div class="footer1">
+                    <div><a href="#">Beds n' Drinks (South Beach)</a></div>
+                    <div><a href="#">Arenal Backpackers Resort</a></div>
+                    <div><a href="#">Alajuela Backpackers</a></div>
+                    <div><a href="#">Monteverde Backpackers</a></div>
+                    <div><a href="#">Hostel Toruma</a></div>
+                    <div><a href="#">Hostel Pangea</a></div>
+                </div>
+
+                <div class="footer2">
+                    <div><a href="#">Home</a></div>
+                    <div><a href="#">About Us</a></div>
+                    <div><a href="#">Mail</a></div>
+                    <div><a href="#">Bookings</a></div>
+                </div>
             </footer>
         </div>
 

@@ -6,13 +6,13 @@ $(document).ready(function(){
 		if(target.hasClass('close')) {
 			target.removeClass('close');
 			target.addClass('open');
-			target.text('Close');
+			target.text('Menu');
 			$('.navList').slideDown();
 		}
 		else if (target.hasClass('open')) {
 			target.removeClass('open');
 			target.addClass('close');
-			target.text('Open');
+			target.text('Menu');
 			$('.navList').slideUp();
 
 		};
