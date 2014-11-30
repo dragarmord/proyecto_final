@@ -41,9 +41,10 @@
 					<ul class="navList">
 						<li><a href="#">Home</a></li>
 						<li><a href="aboutUs.html">About Us</a></li>
-						<li><a href="http://costaricahostelnetwork.com/">Costa Rica Hostel Network</a></li>
-						<li><a href="http://mail.yahoo.com">Mail</a></li>
-						<li><a href="#">Bookings</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="http://mail.yahoo.com">Y! Mail</a></li>
+                        <li><a href="https://login.live.com/login.srf?wa=wsignin1.0&ct=1417324993&rver=6.1.6206.0&sa=1&ntprob=-1&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&id=64855&snsc=1&cbcxt=mail">Outlook Mail</a></li>
+                        <li><a href="#">Bookings</a></li>
 					</ul>
 				</nav>
 			
@@ -71,17 +72,18 @@
                         <tr>
                             <td>
                                 <label for="statusNew"></label>
-                                <input type="checkbox" id="statusNew" value="status1"> New
+                                <input type="checkbox" id="statusNew" value="statusNew1"> New Reservation
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox" id="statusUrgent" value="status2"> Urgent
+                                <input type="checkbox" id="statusUrgent" value="statusUrgent1"> Urgent
                             </td>
                         </tr>
+
                         <tr>
                             <td>
-                                <label for="statusPendiente"><span>Pending Reply</span></label>
+                                <label for="statusPendiente"><span id="bdIndex">Pending Reply</span></label>
                                 <select id="statusPendiente">
                                     <option value="statusPendiente1">Front Desk</option>
                                     <option value="statusPendiente2">Client</option>
@@ -89,11 +91,42 @@
                                 </select>
                             </td>
                         </tr>
+
                         <tr>
                             <td>
-                                <input type="checkbox" id="statusCanceled" value="status3"> <span>Cancel Reservation</span>
+                                <input type="checkbox" id="statusModify" value="statusModify1"> <span>Modified Reservation</span>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="statusOverbooking" value="overbooking"> <span>Overbooking</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="statusTypeCancelation"><span>Type of Cancelation</span></label>
+                                <select id="statusTypeCancelation">
+                                    <option value="statusTypeCancelation1">Normal</option>
+                                    <option value="statusTypeCancelation2">No Show</option>
+                                    <option value="statusTypeCancelation3">Same Day Cancelation</option>
+                                    <option value="statusTypeCancelation4" selected="selected">None</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="statusNoshow"><span>Cancelation Charge</span></label>
+                                <select id="statusNoshow">
+                                    <option value="statusNoshow1">First Day</option>
+                                    <option value="statusNoshow2">All Reservation</option>
+                                    <option value="statusNoshow3" selected="selected">None</option>
+                                </select>
+                            </td>
+                        </tr>
+
                     </table>
                 </div>
 
@@ -127,7 +160,20 @@
                                     <input type="text" id="email" />
                                 </td>
                             </tr>
-                            
+
+                            <tr>
+                                <td>
+                                    <label for="season">Season</label>
+                                </td>
+                                <td>
+                                    <select id="season">
+                                        <option value="season1">Hight Season</option>
+                                        <option value="season2">Low Season</option>
+                                        <option value="season3" selected="selected">None</option>
+                                    </select>
+                                </td>
+                            </tr>
+
                             <tr>
                                 <td>
                                     <label for="company">Booking Company</label>
@@ -143,17 +189,13 @@
                                     </select>
                                 </td>
                             </tr>
-                            
+
                             <tr>
                                 <td>
-                                    <label for="season">Season</label>
+                                    <label for="bookingNum">Booking Number</label>
                                 </td>
                                 <td>
-                                    <select id="season">
-                                        <option value="season1">Hight Season</option>
-                                        <option value="season2">Low Season</option>
-                                        <option value="season3" selected="selected">None</option>
-                                    </select>
+                                    <input type="text" id="bookingNum" tabindex="10" />
                                 </td>
                             </tr>
 
@@ -162,6 +204,7 @@
                         
                     <div class="generalInfo2">
                         <table>
+
                             <tr>
                                 <td>
                                     <label for="n_people">Number of People</label> 
@@ -230,7 +273,10 @@
                                         <option value="private12">3- Standard Triple with Terrace</option>
 
                                         <option value="private13">4- Deluxe Quad with Private Balcony</option>
-                                        <option value="private14" selected="selected">None</option>
+
+                                        <option value="private14">5- Deluxe Penta with Private Balcony</option>
+
+                                        <option value="private15" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -267,7 +313,7 @@
 
                             <tr>
                                 <td>
-                                    <label for="price">Price</label>
+                                    <label for="price">Price (US $)</label>
                                 </td>
                                 <td>
                                     <input type="number" id="price" tabindex="20" />
@@ -316,12 +362,28 @@
                     <div class="crd_card">
                         <h2>Credit Card Information</h2>
                         <table>
+                            <!--<tr>-->
+                                <!--<td>-->
+                                    <!--<label for="typeCC">Type of Credit Card</label>-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                    <!--<input type="text" id="typeCC" tabindex="20" />-->
+                                <!--</td>-->
+                            <!--</tr>-->
+
                             <tr>
                                 <td>
                                     <label for="typeCC">Type of Credit Card</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="typeCC" tabindex="20" />
+                                    <select id="typeCC">
+                                        <option value="typeCC1">Visa</option>
+                                        <option value="typeCC2">Mastercard</option>
+                                        <option value="typeCC3">American Express</option>
+                                        <option value="typeCC3">Other</option>
+                                        <option value="flightAirport4" selected="selected">None</option>
+                                    </select>
+                                    <input type="text" tabindex="20" />
                                 </td>
                             </tr>
 
@@ -573,10 +635,15 @@
                 </div>
 
                 <div class="footer2">
+
+
                     <div><a href="#">Home</a></div>
-                    <div><a href="#">About Us</a></div>
-                    <div><a href="#">Mail</a></div>
+                    <div><a href="aboutUs.html">About Us</a></div>
+                    <div><a href="#">Gallery</a></div>
+                    <div><a href="http://mail.yahoo.com">Y! Mail</a></div>
+                    <div><a href="https://login.live.com/login.srf?wa=wsignin1.0&ct=1417324993&rver=6.1.6206.0&sa=1&ntprob=-1&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&id=64855&snsc=1&cbcxt=mail">Outlook Mail</a></div>
                     <div><a href="#">Bookings</a></div>
+
                 </div>
             </footer>
         </div>
