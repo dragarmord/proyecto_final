@@ -213,7 +213,7 @@
 
                             <tr>
                                 <td>
-                                    <label for="n_people">Number of People</label> 
+                                    <label for="n_people">Number of People</label>
                                 </td>
                                 <td>
                                     <input type="text" id="n_people" tabindex="10" />
@@ -282,7 +282,9 @@
 
                                         <option value="private14">5- Deluxe Penta with Private Balcony</option>
 
-                                        <option value="private15" selected="selected">None</option>
+                                        <option value="private15">Multiple Rooms (check Additional Info)</option>
+
+                                        <option value="private16" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -298,7 +300,8 @@
                                         <option value="tent2">Deluxe Double Tent</option>
                                         <option value="tent3">Deluxe Triple Tent</option>
                                         <option value="tent4">Deluxe Quadruple Tent</option>
-                                        <option value="tent5" selected="selected">None</option>
+                                        <option value="tent5">Multiple Rooms (check Additional Info)</option>
+                                        <option value="tent6" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -312,7 +315,9 @@
                                     <select id="dorm">
                                         <option value="dorm1">8 Bed Mixed Dorm</option>
                                         <option value="dorm2">8 Bed Female Dorm</option>
-                                        <option value="dorm3" selected="selected">None</option>
+                                        <option value="dorm3">8 Bed Private Dorm</option>
+                                        <option value="dorm4">Multiple Rooms (check Additional Info)</option>
+                                        <option value="dorm5" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -349,16 +354,16 @@
                                     <label for="tBeds">Type of Beds</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="tBeds" value="tBeds1"> 1 Single Bed
-                                    <input type="checkbox" id="tBeds" value="tBeds2"> 1 Double Bed
-                                    <input type="checkbox" id="tBeds" value="tBeds3"> 2 Double Beds
+                                    <input type="checkbox" class="tBeds" value="tBeds1"> 1 Single Bed
+                                    <input type="checkbox" class="tBeds" value="tBeds2"> 1 Double Bed
+                                    <input type="checkbox" class="tBeds" value="tBeds3"> 2 Double Beds
                                 </td>
                             <tr>
                                 <td></td>
                                 <td>
-                                    <input type="checkbox" id="tBeds" value="tBeds4"> 3 Single Beds
-                                    <input type="checkbox" id="tBeds" value="tBeds5"> 1 Extra Mattress
-                                    <input type="checkbox" id="tBeds" value="tBeds6"> 2 Extra Mattress
+                                    <input type="checkbox" class="tBeds" value="tBeds4"> 3 Single Beds
+                                    <input type="checkbox" class="tBeds" value="tBeds5"> 1 Extra Mattress
+                                    <input type="checkbox" class="tBeds" value="tBeds6"> 2 Extra Mattress
                                 </td>
                             </tr>
                         </table>
@@ -368,15 +373,6 @@
                     <div class="crd_card">
                         <h2>Credit Card Information</h2>
                         <table>
-                            <!--<tr>-->
-                                <!--<td>-->
-                                    <!--<label for="typeCC">Type of Credit Card</label>-->
-                                <!--</td>-->
-                                <!--<td>-->
-                                    <!--<input type="text" id="typeCC" tabindex="20" />-->
-                                <!--</td>-->
-                            <!--</tr>-->
-
                             <tr>
                                 <td>
                                     <label for="typeCC">Type of Credit Card</label>
@@ -387,9 +383,9 @@
                                         <option value="typeCC2">Mastercard</option>
                                         <option value="typeCC3">American Express</option>
                                         <option value="typeCC3">Other</option>
-                                        <option value="flightAirport4" selected="selected">None</option>
+                                        <option value="typeCC4" selected="selected">None</option>
                                     </select>
-                                    <input type="text" tabindex="20" />
+                                    <input type="text" id="typeCC_other" tabindex="20" />
                                 </td>
                             </tr>
 

@@ -3,17 +3,18 @@
 //conexion a la base de datos
 //Usuario
 //Contraseña
-$bd=@mysql_connect("localhost", "usuario", "contraseña");
+$bd=@mysql_connect("hyper80.com", "hyper", "Modafoka");
 if (!$bd) {
-echo ("Error, No se pudo conectar con la base de datos en este
-momento, Inténtelo más tarde");
+echo ("Error, No se pudo conectar al servidor de la base de datos");
 exit();
 }
-$sel=@mysql_select_db("basedatos");
+$sel=@mysql_select_db("hyper_db");
 if (!$sel){
-echo( "Error, No se puede acceder a la base de datos en este momento, Inténtelo más tarde");
+echo( "Error, Esta base de datos no existe");
 exit();
 }
-@mysql_query("SET NAMES 'utf8'");
+@mysql_query("");
+
+
 
 ?>
