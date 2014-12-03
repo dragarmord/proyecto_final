@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/initializr.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/author.css">
         <link rel="stylesheet" href="css/helper.css">
         <link rel="stylesheet" href="css/mediaQueries.css">
@@ -29,10 +30,18 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="overlay">
+            <form id="tfnewsearch" method="get" action="http://www.google.com">
+                <input type="text" class="tftextinput" name="q">
+            </form>
+        </div>
+
         <!-- ALFRE.... NO HAY CONTENEDOR GENERAL? SOLO EL BODY?-->
 
         <div class="header-container">
             <header class="wrapper clearfix">
+                <i  id="searchIcon" class="fa fa-search"></i>
+
                 <nav>
 					<div class="menu-bar-mobile">
 						<span class="pull-left toggle-btn close">Menu</span>
@@ -47,17 +56,14 @@
                         <li><a href="#">Bookings</a></li>
 					</ul>
 				</nav>
-			
-				<form id="tfnewsearch" method="get" action="http://www.google.com">
-		        	<input type="text" class="tftextinput" name="q" size="17" maxlength="120"><input type="submit" value="search" class="tfbutton">
-				</form>
 
             </header>
 
         </div>
 
         <div class="banner">
-            <img src="img/arenalBanner.jpg">
+            <img src="img/arenalBanner-mobile.jpg" class="img-320">
+            <img src="img/arenalBanner.jpg" class="img-768">
         </div>
 
         <div class="main-container">
@@ -583,7 +589,7 @@
                 <div class="section4 clearfix">
                      <div class="aditionalInfo">
                         <H2>Aditional Information</H2>
-                        <textarea name="aditional_info" id="info" cols="50" rows="3" accesskey="o" tabindex="40"></textarea>
+                        <textarea name="aditional_info" id="info" accesskey="o" tabindex="40"></textarea>
                         <div>
                             <label for="attachment"></label>
                             <input type="file" id="attachment" />

@@ -19,4 +19,17 @@ $(document).ready(function(){
 
 
 	});
+
+    $('#searchIcon').click(function(){
+       $('#tfnewsearch').show();
+       $('.overlay').show();
+        $(this).hide();
+
+    });
+
+    $('.overlay').click(function(){
+        $('#tfnewsearch').hide();
+        $('.overlay').hide();
+        $('#searchIcon').show();
+    });
 });

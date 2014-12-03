@@ -4,40 +4,34 @@
 
 @media only screen and (min-width: 480px) {
 
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */
+    /* ====================
+        INTERMEDIATE: Menu
+       ==================== */
+    /* DEFAULT
 
-  /* DEFAULT
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
 
-  nav a {
-      float: left;
-      width: 27%;
-      margin: 0 1.7%;
-      padding: 25px 2%;
-      margin-bottom: 0;
-  }
+    nav li:first-child a {
+        margin-left: 0;
+    }
 
-  nav li:first-child a {
-      margin-left: 0;
-  }
+    nav li:last-child a {
+        margin-right: 0;
+    }*/
+    /* ========================
+        INTERMEDIATE: IE Fixes
+       ======================== */
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
 
-  nav li:last-child a {
-      margin-right: 0;
-  }*/
-
-
-
-  /* ========================
-      INTERMEDIATE: IE Fixes
-     ======================== */
-
-
-  .oldie nav a {
-    margin: 0 0.7%;
-  }
-
-
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -45,7 +39,21 @@
       WIDE: CSS3 Effects
      ==================== */
 
-  .header-container,
+    .img-320 {
+        display: none;
+    }
+
+    .img-768 {
+        display: block;
+    }
+
+    .section1 > div, .section2 > div, .section3 > div, .aditionalInfo, .bookedBy {
+        width: 50%;
+    }
+
+
+
+    .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
@@ -107,33 +115,4 @@
   }
 }
 
-/* MI CSS */
 
-
-.menu-bar-mobile {
-  /*background-color: black;*/
-  border-bottom: 1px solid #fff;
-  overflow: auto;
-}
-
-.menu-bar-mobile span {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-.menu-bar-mobile span:hover {
-    color: black;
-}
-
-.toggle-btn {
-  cursor: pointer;
-
-}
-
-nav {
-  float: left;
-}
-}

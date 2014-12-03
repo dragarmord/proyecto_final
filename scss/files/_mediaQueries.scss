@@ -103,31 +103,3 @@
     margin: 0 auto;
   }
 }
-
-/* MI CSS */
-
-.menu-bar-mobile {
-  /*background-color: black;*/
-  border-bottom: 1px solid #fff;
-  overflow: auto;
-}
-
-.menu-bar-mobile span {
-  color: white;
-  font-size: 24px;
-  font-family: sans-serif;
-  display: block;
-  padding: 10px;
-}
-
-.toggle-btn {
-  cursor: pointer;
-}
-
-nav {
-  float: left;
-}
-
-#tfnewsearch {
-  float: left;
-}
