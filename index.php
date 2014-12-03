@@ -56,7 +56,6 @@
                         <li><a href="#">Bookings</a></li>
 					</ul>
 				</nav>
-<p>hola</p>
             </header>
 
         </div>
