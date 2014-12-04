@@ -111,7 +111,7 @@ nav {
 
     border: none;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .tfbutton {
@@ -172,14 +172,43 @@ span {
     width: 100%;
 }
 
+input {
+    width: 175px;
+}
+
+select {
+    width: 179px;
+}
+
+.checkbox {
+    width: 20px;
+}
+
+.checkbox_beds {
+    float: left;
+}
+
+#info {
+    width: 270px;
+    min-height: 100px;
+}
+
+#attachment {
+    width: 400px;
+}
+
+.btns {
+    margin-top: 30px;
+}
+
+.btns input {
+    width: 75px;
+}
 
 footer {
     text-align: center;
 }
 
-.footer-container footer {
-    /*padding: 1.250em 0 0 0;*/
-}
 
 footer div div {
     padding: 1.250em 0 1.250em 0;
@@ -222,10 +251,3 @@ footer div div a:hover {
     padding: 20px 0.250em;
 }
 
-#privates {
-    max-width: 370px;
-}
-
-.btns {
-    margin-top: 30px;
-}

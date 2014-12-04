@@ -36,7 +36,6 @@
             </form>
         </div>
 
-        <!-- ALFRE.... NO HAY CONTENEDOR GENERAL? SOLO EL BODY?-->
 
         <div class="header-container">
             <header class="wrapper clearfix">
@@ -77,12 +76,12 @@
                         <tr>
                             <td>
                                 <label for="statusNew"></label>
-                                <input type="checkbox" id="statusNew" value="statusNew1"> New Reservation
+                                <input type="checkbox" class="checkbox" value="statusNew1"> New Reservation
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox" id="statusUrgent" value="statusUrgent1"> Urgent
+                                <input type="checkbox" class="checkbox" value="statusUrgent1"> Urgent
                             </td>
                         </tr>
 
@@ -99,13 +98,13 @@
 
                         <tr>
                             <td>
-                                <input type="checkbox" id="statusModify" value="statusModify1"> <span>Modified Reservation</span>
+                                <input type="checkbox" class="checkbox" value="statusModify"> <span>Modified Reservation</span>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <input type="checkbox" id="statusOverbooking" value="overbooking"> <span>Overbooking</span>
+                                <input type="checkbox" class="checkbox" value="overbooking"> <span>Overbooking</span>
                             </td>
                         </tr>
 
@@ -252,7 +251,7 @@
                 </div>
 
                 <div class="section2 clearfix">
-                    <div class="typeRoom">
+                    <div class="typeRoom clearfix">
                     <h2>Type of Room</h2>
                         <table>
                             <tr>
@@ -348,23 +347,53 @@
                             </tr>
 
 
+<!--                            <tr>-->
+<!--                                <td>-->
+<!--                                    <label for="tBeds">Type of Beds</label>-->
+<!--                                </td>-->
+<!--                                <td>-->
+<!--                                    <input type="checkbox" class="checkbox" value="tBeds1"> 1 Single Bed-->
+<!--                                    <input type="checkbox" class="checkbox" value="tBeds2"> 1 Double Bed-->
+<!--                                    <input type="checkbox" class="checkbox" value="tBeds3"> 2 Double Beds-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td></td>-->
+<!--                                <td>-->
+<!--                                    <input type="checkbox" class="checkbox" value="tBeds4"> 3 Single Beds-->
+<!--                                    <input type="checkbox" class="checkbox" value="tBeds5"> 1 Extra Mattress-->
+<!--                                    <input type="checkbox" class="checkbox" value="tBeds6"> 2 Extra Mattress-->
+<!--                                </td>-->
+<!--                            </tr>-->
+
                             <tr>
                                 <td>
                                     <label for="tBeds">Type of Beds</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" class="tBeds" value="tBeds1"> 1 Single Bed
-                                    <input type="checkbox" class="tBeds" value="tBeds2"> 1 Double Bed
-                                    <input type="checkbox" class="tBeds" value="tBeds3"> 2 Double Beds
-                                </td>
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <input type="checkbox" class="tBeds" value="tBeds4"> 3 Single Beds
-                                    <input type="checkbox" class="tBeds" value="tBeds5"> 1 Extra Mattress
-                                    <input type="checkbox" class="tBeds" value="tBeds6"> 2 Extra Mattress
+                                    <div>
+                                        <div class="checkbox_beds">
+                                            <input type="checkbox" class="checkbox" value="tBeds1"> 1 Single Bed
+                                        </div>
+                                        <div class="checkbox_beds">
+                                            <input type="checkbox" class="checkbox" value="tBeds2"> 1 Double Bed
+                                        </div>
+                                        <div class="checkbox_beds">
+                                            <input type="checkbox" class="checkbox" value="tBeds3"> 2 Double Beds
+                                        </div>
+                                        <div class="checkbox_beds">
+                                            <input type="checkbox" class="checkbox" value="tBeds4"> 3 Single Beds
+                                        </div>
+                                        <div class="checkbox_beds">
+                                            <input type="checkbox" class="checkbox" value="tBeds5"> 1 Extra Mattress
+                                        </div>
+                                        <div class="checkbox_beds">
+                                            <input type="checkbox" class="checkbox" value="tBeds6"> 2 Extra Mattress
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
+
                         </table>
                     </div>
 
@@ -384,7 +413,7 @@
                                         <option value="typeCC3">Other</option>
                                         <option value="typeCC4" selected="selected">None</option>
                                     </select>
-                                    <input type="text" id="typeCC_other" tabindex="20" />
+                                    <input type="text" id="typeCC_other" tabindex="20" placeholder="Another Credit Card..."/>
                                 </td>
                             </tr>
 
@@ -536,7 +565,7 @@
                                         <option value="flightAirport3">Arenal Airport</option>
                                         <option value="flightAirport4" selected="selected">None</option>
                                     </select>
-                                    <input type="text" tabindex="20" />
+                                    <input type="text" tabindex="20" placeholder="Another Airport..." />
                                 </td>
                             </tr>
 
