@@ -47,13 +47,14 @@
 						<!-- <span class="">Open</span> -->
 					</div>
 					<ul class="navList">
-						<li><a href="#">Home</a></li>
-						<li><a href="aboutUs.html">About Us</a></li>
-						<li><a href="#">Gallery</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="aboutus/index.php">About Us</a></li>
+						<li><a href="gallery/index.php">Gallery</a></li>
 						<li><a href="http://mail.yahoo.com">Y! Mail</a></li>
                         <li><a href="https://login.live.com/login.srf?wa=wsignin1.0&ct=1417324993&rver=6.1.6206.0&sa=1&ntprob=-1&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&id=64855&snsc=1&cbcxt=mail">Outlook Mail</a></li>
                         <li><a href="#">Bookings</a></li>
-					</ul>
+                        <li><a href="sitemap/index.php">Site Map</a></li>
+                    </ul>
 				</nav>
             </header>
 
@@ -75,12 +76,6 @@
                     <table>
                         <tr>
                             <td>
-                                <label for="statusNew"></label>
-                                <input type="checkbox" class="checkbox" value="statusNew1"> New Reservation
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
                                 <input type="checkbox" class="checkbox" value="statusUrgent1"> Urgent
                             </td>
                         </tr>
@@ -89,47 +84,13 @@
                             <td>
                                 <label for="statusPendiente"><span id="bdIndex">Pending Reply</span></label>
                                 <select id="statusPendiente">
-                                    <option value="statusPendiente1">Front Desk</option>
                                     <option value="statusPendiente2">Client</option>
                                     <option value="statusPendiente3" selected="selected">None</option>
                                 </select>
                             </td>
                         </tr>
 
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="checkbox" value="statusModify"> <span>Modified Reservation</span>
-                            </td>
-                        </tr>
 
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="checkbox" value="overbooking"> <span>Overbooking</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <label for="statusTypeCancelation"><span>Type of Cancelation</span></label>
-                                <select id="statusTypeCancelation">
-                                    <option value="statusTypeCancelation1">Normal</option>
-                                    <option value="statusTypeCancelation2">No Show</option>
-                                    <option value="statusTypeCancelation3">Same Day Cancelation</option>
-                                    <option value="statusTypeCancelation4" selected="selected">None</option>
-                                </select>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <label for="statusNoshow"><span>Cancelation Charge</span></label>
-                                <select id="statusNoshow">
-                                    <option value="statusNoshow1">First Day</option>
-                                    <option value="statusNoshow2">All Reservation</option>
-                                    <option value="statusNoshow3" selected="selected">None</option>
-                                </select>
-                            </td>
-                        </tr>
 
                     </table>
                 </div>
@@ -143,7 +104,7 @@
                                     <label for="nombre">Name</label> 
                                 </td>
                                 <td>
-                                    <input type="text" id="name" tabindex="10" />
+                                    <input type="text" id="name"/>
                                 </td>
                             </tr>
                             
@@ -152,7 +113,7 @@
                                     <label for="apellidos">Last Name</label>
                                 </td>
                                 <td> 
-                                    <input type="text" id="last_name" tabindex="20" /> 
+                                    <input type="text" id="last_name"/>
                                 </td>
                             </tr>
 
@@ -199,7 +160,7 @@
                                     <label for="bookingNum">Booking Number</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="bookingNum" tabindex="10" />
+                                    <input type="text" id="bookingNum"/>
                                 </td>
                             </tr>
 
@@ -214,7 +175,7 @@
                                     <label for="n_people">Number of People</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="n_people" tabindex="10" />
+                                    <input type="text" id="n_people"/>
                                 </td>
                             </tr>
                             
@@ -223,7 +184,7 @@
                                     <label for="n_nights">Number of Nights</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="n_nights" tabindex="20" />
+                                    <input type="text" id="n_nights"/>
                                 </td>
                             </tr>
 
@@ -286,46 +247,48 @@
                                     </select>
                                 </td>
                             </tr>
-                        
-                            <tr>
-                                <td>
-                                    <label for="safariTent">Safari Tents</label>
-                                </td>
 
-                                <td>
-                                    <select id="safariTent">
-                                        <option value="tent1">Deluxe Single Tent</option>
-                                        <option value="tent2">Deluxe Double Tent</option>
-                                        <option value="tent3">Deluxe Triple Tent</option>
-                                        <option value="tent4">Deluxe Quadruple Tent</option>
-                                        <option value="tent5">Multiple Rooms (check Additional Info)</option>
-                                        <option value="tent6" selected="selected">None</option>
-                                    </select>
-                                </td>
-                            </tr>
+<!--                            HACER EN UN FUTURO: TIPO CARRITO DE AMAZON EN DONDE UNO AGREGA ITEMS A UNA LISTA-->
 
-                             <tr>
-                                <td>
-                                    <label for="dorm">Dorms</label>
-                                </td>
-
-                                <td>
-                                    <select id="dorm">
-                                        <option value="dorm1">8 Bed Mixed Dorm</option>
-                                        <option value="dorm2">8 Bed Female Dorm</option>
-                                        <option value="dorm3">8 Bed Private Dorm</option>
-                                        <option value="dorm4">Multiple Rooms (check Additional Info)</option>
-                                        <option value="dorm5" selected="selected">None</option>
-                                    </select>
-                                </td>
-                            </tr>
+<!--                            <tr>-->
+<!--                                <td>-->
+<!--                                    <label for="safariTent">Safari Tents</label>-->
+<!--                                </td>-->
+<!---->
+<!--                                <td>-->
+<!--                                    <select id="safariTent">-->
+<!--                                        <option value="tent1">Deluxe Single Tent</option>-->
+<!--                                        <option value="tent2">Deluxe Double Tent</option>-->
+<!--                                        <option value="tent3">Deluxe Triple Tent</option>-->
+<!--                                        <option value="tent4">Deluxe Quadruple Tent</option>-->
+<!--                                        <option value="tent5">Multiple Rooms (check Additional Info)</option>-->
+<!--                                        <option value="tent6" selected="selected">None</option>-->
+<!--                                    </select>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!---->
+<!--                             <tr>-->
+<!--                                <td>-->
+<!--                                    <label for="dorm">Dorms</label>-->
+<!--                                </td>-->
+<!---->
+<!--                                <td>-->
+<!--                                    <select id="dorm">-->
+<!--                                        <option value="dorm1">8 Bed Mixed Dorm</option>-->
+<!--                                        <option value="dorm2">8 Bed Female Dorm</option>-->
+<!--                                        <option value="dorm3">8 Bed Private Dorm</option>-->
+<!--                                        <option value="dorm4">Multiple Rooms (check Additional Info)</option>-->
+<!--                                        <option value="dorm5" selected="selected">None</option>-->
+<!--                                    </select>-->
+<!--                                </td>-->
+<!--                            </tr>-->
 
                             <tr>
                                 <td>
                                     <label for="price">Price (US $)</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="price" tabindex="20" />
+                                    <input type="number" id="price"/>
                                 </td>
                             </tr>
 
@@ -336,63 +299,47 @@
 
                                 <td>
                                     <select id="paymentType">
-                                        <option value="paymentType1">Per Room</option>
-                                        <option value="paymentType2">Per Night</option>
-                                        <option value="paymentType3">Per Person/Per Night</option>
-                                        <option value="paymentType4">Total</option>
-                                        <option value="paymentType5" selected="selected">None</option>
+                                        <option value="paymentType1">Per Room/Per Night</option>
+                                        <option value="paymentType2">Per Person/Per Night</option>
+                                        <option value="paymentType3">Total</option>
+                                        <option value="paymentType4" selected="selected">None</option>
 
                                     </select>
                                 </td>
                             </tr>
 
 
+
+
+<!--                            PARA LA SEGUNDA VERSION!!!!!-->
+<!--                            -->
 <!--                            <tr>-->
 <!--                                <td>-->
 <!--                                    <label for="tBeds">Type of Beds</label>-->
 <!--                                </td>-->
 <!--                                <td>-->
-<!--                                    <input type="checkbox" class="checkbox" value="tBeds1"> 1 Single Bed-->
-<!--                                    <input type="checkbox" class="checkbox" value="tBeds2"> 1 Double Bed-->
-<!--                                    <input type="checkbox" class="checkbox" value="tBeds3"> 2 Double Beds-->
+<!--                                    <div>-->
+<!--                                        <div class="checkbox_beds">-->
+<!--                                            <input type="checkbox" class="checkbox" value="tBeds1"> 1 Single Bed-->
+<!--                                        </div>-->
+<!--                                        <div class="checkbox_beds">-->
+<!--                                            <input type="checkbox" class="checkbox" value="tBeds2"> 1 Double Bed-->
+<!--                                        </div>-->
+<!--                                        <div class="checkbox_beds">-->
+<!--                                            <input type="checkbox" class="checkbox" value="tBeds3"> 2 Double Beds-->
+<!--                                        </div>-->
+<!--                                        <div class="checkbox_beds">-->
+<!--                                            <input type="checkbox" class="checkbox" value="tBeds4"> 3 Single Beds-->
+<!--                                        </div>-->
+<!--                                        <div class="checkbox_beds">-->
+<!--                                            <input type="checkbox" class="checkbox" value="tBeds5"> 1 Extra Mattress-->
+<!--                                        </div>-->
+<!--                                        <div class="checkbox_beds">-->
+<!--                                            <input type="checkbox" class="checkbox" value="tBeds6"> 2 Extra Mattress-->
+<!--                                        </div>-->
+<!--                                    </div>-->
 <!--                                </td>-->
 <!--                            </tr>-->
-<!--                            <tr>-->
-<!--                                <td></td>-->
-<!--                                <td>-->
-<!--                                    <input type="checkbox" class="checkbox" value="tBeds4"> 3 Single Beds-->
-<!--                                    <input type="checkbox" class="checkbox" value="tBeds5"> 1 Extra Mattress-->
-<!--                                    <input type="checkbox" class="checkbox" value="tBeds6"> 2 Extra Mattress-->
-<!--                                </td>-->
-<!--                            </tr>-->
-
-                            <tr>
-                                <td>
-                                    <label for="tBeds">Type of Beds</label>
-                                </td>
-                                <td>
-                                    <div>
-                                        <div class="checkbox_beds">
-                                            <input type="checkbox" class="checkbox" value="tBeds1"> 1 Single Bed
-                                        </div>
-                                        <div class="checkbox_beds">
-                                            <input type="checkbox" class="checkbox" value="tBeds2"> 1 Double Bed
-                                        </div>
-                                        <div class="checkbox_beds">
-                                            <input type="checkbox" class="checkbox" value="tBeds3"> 2 Double Beds
-                                        </div>
-                                        <div class="checkbox_beds">
-                                            <input type="checkbox" class="checkbox" value="tBeds4"> 3 Single Beds
-                                        </div>
-                                        <div class="checkbox_beds">
-                                            <input type="checkbox" class="checkbox" value="tBeds5"> 1 Extra Mattress
-                                        </div>
-                                        <div class="checkbox_beds">
-                                            <input type="checkbox" class="checkbox" value="tBeds6"> 2 Extra Mattress
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
 
                         </table>
                     </div>
@@ -410,10 +357,8 @@
                                         <option value="typeCC1">Visa</option>
                                         <option value="typeCC2">Mastercard</option>
                                         <option value="typeCC3">American Express</option>
-                                        <option value="typeCC3">Other</option>
                                         <option value="typeCC4" selected="selected">None</option>
                                     </select>
-                                    <input type="text" id="typeCC_other" tabindex="20" placeholder="Another Credit Card..."/>
                                 </td>
                             </tr>
 
@@ -422,7 +367,7 @@
                                     <label for="ccName">Name</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="ccName" tabindex="20" />
+                                    <input type="text" id="ccName"/>
                                 </td>
                             </tr>
 
@@ -431,7 +376,7 @@
                                     <label for="ccNum">Number</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="ccNum" tabindex="20" />
+                                    <input type="number" id="ccNum"/>
                                 </td>
                             </tr>
 
@@ -440,7 +385,7 @@
                                     <label for="ccExp">Expires</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="ccExp" tabindex="20" />
+                                    <input type="number" id="ccExp"/>
                                 </td>
                             </tr>
 
@@ -449,7 +394,7 @@
                                     <label for="ccSecurity">Security Code</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="ccSecurity" tabindex="20" />
+                                    <input type="number" id="ccSecurity"/>
                                 </td>
                             </tr>
 
@@ -474,14 +419,24 @@
 
                             <tr>
                                 <td>
-                                    <label for="shuttleWhere">Where</label>
+                                    <label for="shuttleWhen">When</label>
                                 </td>
                                 <td>
-                                    <select id="shuttleWhere">
-                                        <option value="shuttleWhere1">In</option>
-                                        <option value="shuttleWhere2">Out</option>
-                                        <option value="shuttleWhere3" selected="selected">None</option>
+                                    <select id="shuttleWhen">
+                                        <option value="shuttleWhen1">In</option>
+                                        <option value="shuttleWhen2">Out</option>
+                                        <option value="shuttleWhen3" selected="selected">None</option>
                                     </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="shuttleTime">Pick-up Time</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="shuttleTime"/>
+                                    <!-- NECESITO K SEA FORMAT EN HORAS -->
                                 </td>
                             </tr>
 
@@ -490,7 +445,7 @@
                                     <label for="shuttleFrom">From</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="shuttleFrom" tabindex="20" />
+                                    <input type="text" id="shuttleFrom"/>
                                 </td>
                             </tr>
 
@@ -499,7 +454,7 @@
                                     <label for="shuttleTo">To</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="shuttleTo" tabindex="20" />
+                                    <input type="text" id="shuttleTo"/>
                                 </td>
                             </tr>
 
@@ -508,7 +463,7 @@
                                     <label for="shuttlePeople">Number of People</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="shuttlePeople" tabindex="20" />
+                                    <input type="number" id="shuttlePeople"/>
                                 </td>
                             </tr>
 
@@ -517,7 +472,7 @@
                                     <label for="shuttlePrice">Price Per Person</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="shuttlePrice" tabindex="20" />
+                                    <input type="number" id="shuttlePrice"/>
                                 </td>
                             </tr>
 
@@ -533,19 +488,9 @@
                                         <option value="shuttleCompany3">Private</option>
                                         <option value="shuttleCompany4" selected="selected">None</option>
                                     </select>
-                                    <input type="text" tabindex="20" />
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td>
-                                    <label for="shuttleTime">Pick-up Time</label>
-                                </td>
-                                <td>
-                                    <input type="number" id="shuttleTime" tabindex="20" />
-                                    <!-- NECESITO K SEA FORMAT EN HORAS -->
-                                </td>
-                            </tr>
                         </table>
                     </div>
 
@@ -565,7 +510,6 @@
                                         <option value="flightAirport3">Arenal Airport</option>
                                         <option value="flightAirport4" selected="selected">None</option>
                                     </select>
-                                    <input type="text" tabindex="20" placeholder="Another Airport..." />
                                 </td>
                             </tr>
 
@@ -574,7 +518,7 @@
                                     <label for="flightCompany">Airline Company</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="flightCompany" tabindex="20" />
+                                    <input type="text" id="flightCompany"/>
                                 </td>
                             </tr>
 
@@ -583,7 +527,7 @@
                                     <label for="flightNum">Flight Number</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="flightNum" tabindex="20" />
+                                    <input type="number" id="flightNum"/>
                                 </td>
                             </tr>
 
@@ -592,7 +536,7 @@
                                     <label for="flightFrom">From</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="flightFrom" tabindex="20" />
+                                    <input type="text" id="flightFrom"/>
                                 </td>
                             </tr>
 
@@ -601,7 +545,7 @@
                                     <label for="flightTime">Arrival Time</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="flightTime" tabindex="20" />
+                                    <input type="text" id="flightTime"/>
                                 </td>
                             </tr>
 
@@ -613,11 +557,16 @@
                 <div class="section4 clearfix">
                      <div class="aditionalInfo">
                         <H2>Aditional Information</H2>
-                        <textarea name="aditional_info" id="info" accesskey="o" tabindex="40"></textarea>
-                        <div>
-                            <label for="attachment"></label>
-                            <input type="file" id="attachment" />
-                        </div>
+                        <textarea name="aditional_info" id="info" accesskey="o"></textarea>
+
+
+<!--                         PARA LA SEGUNDA VERSION!!!! -->
+<!--                         <div>-->
+<!--                            <label for="attachment"></label>-->
+<!--                            <input type="file" id="attachment" />-->
+<!--                        </div>-->
+
+
                      </div>
 
                     <div class="bookedBy clearfix">
@@ -642,7 +591,7 @@
                 </div>
 
                 <div class="btns">
-                    <input type="submit" id="send" value="Send" accesskey="v" tabindex="60" />
+                    <input type="submit" id="send" value="Send" accesskey="v"/>
                     <input type="reset" id="reset" value="Reset" />
                 </div>
 
@@ -668,11 +617,12 @@
 
 
                     <div><a href="#">Home</a></div>
-                    <div><a href="aboutUs.html">About Us</a></div>
+                    <div><a href="aboutus/index.php">About Us</a></div>
                     <div><a href="#">Gallery</a></div>
                     <div><a href="http://mail.yahoo.com">Y! Mail</a></div>
                     <div><a href="https://login.live.com/login.srf?wa=wsignin1.0&ct=1417324993&rver=6.1.6206.0&sa=1&ntprob=-1&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&id=64855&snsc=1&cbcxt=mail">Outlook Mail</a></div>
                     <div><a href="#">Bookings</a></div>
+                    <div><a href="index.php">Site Map</a></div>
 
                 </div>
             </footer>

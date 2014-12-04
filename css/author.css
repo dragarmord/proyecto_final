@@ -2,8 +2,20 @@
    Author's custom styles
    ========================================================================== */
 
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+
+body {
+    font-family: 'Lato', Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Bitter', serif;
+    line-height: 1.3em;
+}
+
 .main-container {
-    background-color: rgb(236, 141, 100);
+    background-color: rgb(250, 250, 250);
 }
 
 #searchIcon {
@@ -75,7 +87,7 @@ nav a:hover {
 }
 
 .menu-bar-mobile span:hover {
-    color: black;
+    /* color: black; */
 }
 
 .toggle-btn {
@@ -152,15 +164,6 @@ h1 {
     border-bottom: solid #000000;
 }
 
-span {
-    color: red;
-    font-weight: bold;
-}
-
-#bdIndex {
-    color: blue;
-    font-weight: bold;
-}
 
 .status, .section1, .section2, .section3 {
     padding-bottom: 20px;
@@ -180,6 +183,7 @@ select {
     width: 179px;
 }
 
+
 .checkbox {
     width: 20px;
 }
@@ -193,9 +197,9 @@ select {
     min-height: 100px;
 }
 
-#attachment {
+/*#attachment {
     width: 400px;
-}
+}*/
 
 .btns {
     margin-top: 30px;
@@ -250,4 +254,25 @@ footer div div a:hover {
     background-color: rgba(16, 16, 16, 0.84);
     padding: 20px 0.250em;
 }
+
+
+
+#imgContainer div {
+    width: 29%;
+    float: left;
+    margin: 2%;
+}
+
+#imgContainer img {
+    max-width: 100%;
+}
+
+#imgAboutUs {
+    width: 100%;
+}
+
+#imgAboutUs img {
+    max-width: 100%;
+}
+
 
