@@ -603,14 +603,14 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h2><a href="#">Costa Rica Hostel Network</a></h2>
+                <h2><a href="http://costaricahostelnetwork.com/">Costa Rica Hostel Network</a></h2>
                 <div class="footer1">
-                    <div><a href="#">Beds n' Drinks (South Beach)</a></div>
-                    <div><a href="#">Arenal Backpackers Resort</a></div>
-                    <div><a href="#">Alajuela Backpackers</a></div>
-                    <div><a href="#">Monteverde Backpackers</a></div>
-                    <div><a href="#">Hostel Toruma</a></div>
-                    <div><a href="#">Hostel Pangea</a></div>
+                    <div><a href="http://www.bedsndrinks.com/">Beds n' Drinks (South Beach)</a></div>
+                    <div><a href="http://arenalbackpackersresort.com/">Arenal Backpackers Resort</a></div>
+                    <div><a href="http://alajuelabackpackers.com/">Alajuela Backpackers</a></div>
+                    <div><a href="http://monteverdebackpackers.com/">Monteverde Backpackers</a></div>
+                    <div><a href="http://hosteltoruma.com/">Hostel Toruma</a></div>
+                    <div><a href="http://hostelpangea.com/">Hostel Pangea</a></div>
                 </div>
 
                 <div class="footer2">

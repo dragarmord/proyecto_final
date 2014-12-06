@@ -68,8 +68,10 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
 
-                <div>
+                <div class="hostelLinks">
                    <h1>About Us</h1>
+                   <h3><a href="http://arenalbackpackersresort.com/">Arenal Backpackers Resort</a></h3>
+
                    <p>Recognized for the friendly staff, welcoming atmosphere and quality of the facilities. You will forget that it's a hostel, as it feels more like a resort.
 
                        Opened in 2001 and part of the Costa Rica Hostel Network, we were the first and only hostel in La Fortuna, in reward we created an original concept that could lodge the ideal costumers for this area. Vibrant, spontaneous, fun and with a lot of energy.</p>
@@ -84,6 +86,44 @@
 
                    <p>We love what we do, and don't doubt of going out of our way to show you this country and what makes us so proud, but most important to see you leaving with a smile on your face.</p>
 
+                    <p>E-Mail: arenalhostel@yahoo.com</p>
+
+
+                    <h3><a href="http://www.bedsndrinks.com/">Beds n' Drinks (South Beach)</a></h3>
+                    <p>Is the newest addition to the hostel scene in Miami Beach. it is ultra modern, classy, elegant, and fun. it is also the beginning of an all-inclusive hostel network in the United States that will convince you that budget traveling is the way to go!</p>
+
+                    <p>It's also an ultra modern hostel with keyless locks on the doors, a fully restored marble lobby, and professionally designed private and dorm rooms! The hostel is fun, energetic, and most importantly, it is located just a few steps from the beach and lincoln road.</p>
+
+                    <p>E-Mail: book@bedsndrinks.com</p>
+
+
+                    <h3><a href="http://alajuelabackpackers.com/">Alajuela Backpackers</a></h3>
+
+                    <p>"Located in the heart of Alajuela (1 minute from the Juan Santamaria Intl Airport), this hostel (more like a hotel) is the perfect place to either recharge batteries before heading home, or touching base before heading to the playground this country is." - Lonely planet</p>
+
+                    <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+
+                    <h3><a href="http://monteverdebackpackers.com/">Monteverde Backpackers</a></h3>
+
+                    <p>We're located at the Monteverde Cloud Forest... "Is clean and friendly, with comfty beds and some of the hottest, most powerful showers we have ever felt. Ahhh!. You'll also find a communal kitchen, outdoor patio and TV lounge." - Lonely planet</p>
+
+                    <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+
+
+                    <h3><a href="http://hosteltoruma.com/">Hostel Toruma</a></h3>
+
+                    <p>"It's a mellow spot, popular with chilled-out solo travelers, couples and young families. One of the best budget deals in San Jose." - Lonely Planet</p>
+
+                    <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+
+
+                    <h3><a href="http://hostelpangea.com/">Hostel Pangea</a></h3>
+
+                    <p>"This is a party spot. But the rooms are clean, the mattresses firm and the bathrooms freshly remodeled. Of all the amenities, it is the restaurant in particular, that is godsend -open until midnight-, it serves lip-smacking quesadillas, veggie burritos and what has to be San Jose's tastiest burgers." - Lonely Planet</p>
+
+                    <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+
+
                     <div id="imgAboutUs"><img src="../img/abr-26.jpg" alt="friendly people"/></div>
                 </div>
 
@@ -92,14 +132,14 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h2><a href="#">Costa Rica Hostel Network</a></h2>
+                <h2><a href="http://costaricahostelnetwork.com/">Costa Rica Hostel Network</a></h2>
                 <div class="footer1">
-                    <div><a href="#">Beds n' Drinks (South Beach)</a></div>
-                    <div><a href="#">Arenal Backpackers Resort</a></div>
-                    <div><a href="#">Alajuela Backpackers</a></div>
-                    <div><a href="#">Monteverde Backpackers</a></div>
-                    <div><a href="#">Hostel Toruma</a></div>
-                    <div><a href="#">Hostel Pangea</a></div>
+                    <div><a href="http://www.bedsndrinks.com/">Beds n' Drinks (South Beach)</a></div>
+                    <div><a href="http://arenalbackpackersresort.com/">Arenal Backpackers Resort</a></div>
+                    <div><a href="http://alajuelabackpackers.com/">Alajuela Backpackers</a></div>
+                    <div><a href="http://monteverdebackpackers.com/">Monteverde Backpackers</a></div>
+                    <div><a href="http://hosteltoruma.com/">Hostel Toruma</a></div>
+                    <div><a href="http://hostelpangea.com/">Hostel Pangea</a></div>
                 </div>
 
                 <div class="footer2">

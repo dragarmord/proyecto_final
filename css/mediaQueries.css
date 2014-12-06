@@ -87,7 +87,6 @@
   nav ul li {
     display: inline-block;
     border-bottom: none;
-    /*background-color: #ba421b;*/
   }
 
 
@@ -106,7 +105,18 @@
     float: right;
     width: 28%;
   }
+
+    footer div div a:hover {
+        background-color: rgba(16, 16, 16, 0.84);
+        padding: 1.250em 0.250em;
+    }
+
+    footer h2 a:hover {
+        color: #ffffff;
+    }
+
 }
+
 
 @media only screen and (min-width: 1140px) {
 
