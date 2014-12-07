@@ -7,7 +7,6 @@
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-
   /* DEFAULT
 
   nav a {
@@ -25,17 +24,18 @@
   nav li:last-child a {
       margin-right: 0;
   }*/
-
-
-
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-
-
   .oldie nav a {
     margin: 0 0.7%;
   }
+
+  #info {
+    width: 400px;
+    min-height: 100px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -43,6 +43,20 @@
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
+
+  .img-320 {
+    display: none;
+  }
+
+  .img-768 {
+    display: block;
+  }
+
+  .section1 > div, .section2 > div, .section3 > div, .aditionalInfo, .bookedBy {
+    width: 50%;
+  }
+
+
 
   .header-container,
   .main aside {
@@ -77,6 +91,7 @@
 
 
 
+
   /* ============
       WIDE: Main
      ============ */
@@ -90,7 +105,18 @@
     float: right;
     width: 28%;
   }
+
+  footer div div a:hover {
+    background-color: rgba(16, 16, 16, 0.84);
+    padding: 1.250em 0.250em;
+  }
+
+  footer h2 a:hover {
+    color: #ffffff;
+  }
+
 }
+
 
 @media only screen and (min-width: 1140px) {
 
@@ -103,3 +129,5 @@
     margin: 0 auto;
   }
 }
+
+

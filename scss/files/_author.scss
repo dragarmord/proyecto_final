@@ -2,38 +2,74 @@
    Author's custom styles
    ========================================================================== */
 
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+
+body {
+  font-family: 'Lato', Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Bitter', serif;
+  line-height: 1.3em;
+  color: #282727;
+}
+
+.main-container {
+  background-color: rgb(250, 250, 250);
+}
+
+#searchIcon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 10;
+
+  color: #FFFFFF;
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  z-index: 1;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.img-768 {
+  display: none;
+}
+
 nav ul {
-  padding: 0px;
-  margin: 0px;
+  padding: 0em;
+  margin: 0em;
   list-style-type: none;
   display: none;
 }
 
 nav ul li a{
-  color: #fff;
-  font-size: 22px;
   font-family: sans-serif;
-  text-decoration: none;
+  display: inline-block;
+  border-bottom: none;
+  padding: 0.625em;
+
 }
 
+
 nav ul li {
-  padding: 10px;
   border-bottom: 1px solid #fff;
 }
 
-.pull-left {
-  float: left;
-  display: block;
-}
+nav a:hover {
+  color: #ffffff;
+  background-color: rgba(16, 16, 16, 0.84);
+  text-decoration: none;
 
-.pull-right {
-  float: right;
-  display: block;
-}
-
-.seccion1 > div {
-  width: 50%;
-  float: left;
 }
 
 .menu-bar-mobile {
@@ -44,20 +80,195 @@ nav ul li {
 
 .menu-bar-mobile span {
   color: white;
-  font-size: 24px;
-  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
   display: block;
-  padding: 10px;
+  padding: 0.625em;
 }
+
 
 .toggle-btn {
   cursor: pointer;
+
 }
 
-nav {
+.pull-left {
   float: left;
+  display: block;
 }
 
-#tfnewsearch {
-  float: left;
+/* +++++++++++++++++++++++++++++++++++++++++++
+    Search Bar
+   +++++++++++++++++++++++++++++++++++++++++++
+*/
+
+#tfnewsearch{
+  display: none;
+
+  z-index: 2;
+  padding: 0 5%;
 }
+
+.tftextinput{
+  margin: 0;
+  font-size: 0.875em;
+  height: 1.250em;
+
+  border: none;
+  width: 100%;
+  margin-top: 0.625em;
+}
+
+.tfbutton {
+  margin: 0;
+  padding: 0.313em 0.938em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:0.875em;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border: solid 1px #0076a3; border-right:0px;
+  background: #0095cd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+  background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+}
+.tfbutton:hover {
+  text-decoration: none;
+  background: #007ead;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+  background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+}
+/* Fixes submit button height problem in Firefox */
+.tfbutton::-moz-focus-inner {
+  border: 0;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+h1 {
+  margin: 0;
+  padding: 0.67em 0 1.563em 0;
+  text-align: center;
+  border-bottom: #282727 solid;
+}
+
+p   {
+  color: #282727;
+}
+
+.hostelLinks ul li a, .hostelLinks a {
+  text-decoration: none;
+  color: #282727;
+}
+
+.hostelLinks ul li a:hover, .hostelLinks a:hover {
+  color: #e44d26;
+  font-weight: bold;
+}
+
+.status, .section1, .section2, .section3 {
+  padding-bottom: 1.250em;
+  border-bottom: solid #282727;
+}
+
+.section1 > div, .section2 > div, .section3 > div, .aditionalInfo, .bookedBy {
+  float: left;
+  width: 100%;
+}
+
+input {
+  width: 10.938em;
+}
+
+select {
+  width: 11.188em;
+}
+
+
+.checkbox {
+  width: 1.250em;
+}
+
+/*.checkbox_beds {
+    float: left;
+}*/
+
+#info {
+  width: 16.875em;
+  min-height: 6.250em;
+}
+
+/*#attachment {
+    width: 400px;
+}*/
+
+.btns {
+  margin-top: 1.875em;
+}
+
+.btns input {
+  width: 4.688em;
+}
+
+footer {
+  text-align: center;
+}
+
+
+footer div div {
+  padding: 1.250em 0 1.250em 0;
+}
+
+.footer1 {
+  border-bottom-color: #282727;
+  border-bottom-style: solid;
+}
+
+footer h2 {
+  margin: 0;
+  text-align: center;
+}
+
+footer h2 a {
+  color: #282727;
+  text-decoration: none;
+}
+
+
+footer div div a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 0.250em;
+}
+
+footer div {
+  display: inline-block;
+}
+
+
+
+#imgContainer div {
+  width: 29%;
+  float: left;
+  margin: 2%;
+}
+
+#imgContainer img {
+  max-width: 100%;
+}
+
+#imgAboutUs {
+  width: 100%;
+}
+
+#imgAboutUs img {
+  max-width: 100%;
+}
+
+

@@ -1,3 +1,8 @@
-.mierda {
-  width: 47px;
-}
+@import "files/normalize";
+@import "files/base";
+@import "files/initializr";
+@import "files/font-awesome";
+@import "files/author";
+@import "files/helper";
+@import "files/mediaQueries";
+@import "files/print";

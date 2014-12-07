@@ -13,15 +13,16 @@
         <title>Arenal Backpackers Bookings</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/initializr.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/author.css">
-        <link rel="stylesheet" href="css/helper.css">
-        <link rel="stylesheet" href="css/mediaQueries.css">
-        <link rel="stylesheet" href="css/print.css">
+<!--        <link rel="stylesheet" href="css/normalize.css">-->
+<!--        <link rel="stylesheet" href="css/base.css">-->
+<!--        <link rel="stylesheet" href="css/initializr.css">-->
+<!--        <link rel="stylesheet" href="css/font-awesome.css">-->
+<!--        <link rel="stylesheet" href="css/author.css">-->
+<!--        <link rel="stylesheet" href="css/helper.css">-->
+<!--        <link rel="stylesheet" href="css/mediaQueries.css">-->
+<!--        <link rel="stylesheet" href="css/print.css">-->
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
