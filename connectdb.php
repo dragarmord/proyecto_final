@@ -13,7 +13,7 @@ if (!$sel){
 echo( "Error, Esta base de datos no existe");
 exit();
 }
-@mysql_query("");
+//@mysql_query("");
 
 
 
