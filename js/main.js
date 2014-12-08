@@ -21,15 +21,15 @@ $(document).ready(function(){
 	});
 
     $('#searchIcon').click(function(){
-       $('#tfnewsearch').show();
-       $('.overlay').show();
+       $('#tfnewsearch').show(300);
+        $('#removeSearchIcon').show(500);
         $(this).hide();
 
     });
 
-    $('.overlay').click(function(){
-        $('#tfnewsearch').hide();
-        $('.overlay').hide();
-        $('#searchIcon').show();
+    $('#removeSearchIcon').click(function(){
+        $('#tfnewsearch').hide(200);
+        $(this).hide(200);
+        $('#searchIcon').show(400);
     });
 });

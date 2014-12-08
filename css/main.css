@@ -3425,7 +3425,7 @@ h1, h2, h3 {
 }
 
 /* line 22, ../scss/files/_author.scss */
-#searchIcon {
+#searchIcon, #removeSearchIcon {
   position: absolute;
   top: 15px;
   right: 20px;
@@ -3433,7 +3433,13 @@ h1, h2, h3 {
   color: #FFFFFF;
 }
 
-/* line 31, ../scss/files/_author.scss */
+/* line 30, ../scss/files/_author.scss */
+#removeSearchIcon {
+  display: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 35, ../scss/files/_author.scss */
 .overlay {
   position: fixed;
   height: 100%;
@@ -3443,17 +3449,17 @@ h1, h2, h3 {
   z-index: 1;
 }
 
-/* line 40, ../scss/files/_author.scss */
+/* line 44, ../scss/files/_author.scss */
 .banner img {
   max-width: 100%;
 }
 
-/* line 44, ../scss/files/_author.scss */
+/* line 48, ../scss/files/_author.scss */
 .img-768 {
   display: none;
 }
 
-/* line 48, ../scss/files/_author.scss */
+/* line 52, ../scss/files/_author.scss */
 nav ul {
   padding: 0em;
   margin: 0em;
@@ -3461,7 +3467,7 @@ nav ul {
   display: none;
 }
 
-/* line 55, ../scss/files/_author.scss */
+/* line 59, ../scss/files/_author.scss */
 nav ul li a {
   font-family: sans-serif;
   display: inline-block;
@@ -3469,26 +3475,26 @@ nav ul li a {
   padding: 0.625em;
 }
 
-/* line 64, ../scss/files/_author.scss */
+/* line 68, ../scss/files/_author.scss */
 nav ul li {
   border-bottom: 1px solid #fff;
 }
 
-/* line 68, ../scss/files/_author.scss */
+/* line 72, ../scss/files/_author.scss */
 nav a:hover {
   color: #ffffff;
   background-color: rgba(16, 16, 16, 0.84);
   text-decoration: none;
 }
 
-/* line 75, ../scss/files/_author.scss */
+/* line 79, ../scss/files/_author.scss */
 .menu-bar-mobile {
   /*background-color: black;*/
   border-bottom: 1px solid #fff;
   overflow: auto;
 }
 
-/* line 81, ../scss/files/_author.scss */
+/* line 85, ../scss/files/_author.scss */
 .menu-bar-mobile span {
   color: white;
   font-weight: bold;
@@ -3497,12 +3503,12 @@ nav a:hover {
   padding: 0.625em;
 }
 
-/* line 90, ../scss/files/_author.scss */
+/* line 94, ../scss/files/_author.scss */
 .toggle-btn {
   cursor: pointer;
 }
 
-/* line 95, ../scss/files/_author.scss */
+/* line 99, ../scss/files/_author.scss */
 .pull-left {
   float: left;
   display: block;
@@ -3512,18 +3518,16 @@ nav a:hover {
     Search Bar
    +++++++++++++++++++++++++++++++++++++++++++
 */
-/* line 105, ../scss/files/_author.scss */
+/* line 109, ../scss/files/_author.scss */
 #tfnewsearch {
   display: none;
-  z-index: 2;
-  padding: 0 5%;
 }
 
-/* line 112, ../scss/files/_author.scss */
+/* line 113, ../scss/files/_author.scss */
 .tftextinput {
   margin: 0;
   font-size: 0.875em;
-  height: 1.250em;
+  height: 1.750em;
   border: none;
   width: 100%;
   margin-top: 0.625em;
