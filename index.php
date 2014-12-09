@@ -11,7 +11,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Arenal Backpackers Bookings</title>
+        <title>Arenal Backpackers Resort</title>
         <meta name="description" content="">
         <?php include($root."include/head.html"); ?>
 

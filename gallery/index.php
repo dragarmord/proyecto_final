@@ -11,13 +11,13 @@ require("../connectdb.php");
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Arenal Backpackers Bookings</title>
+        <title>Arenal Backpackers - Galley</title>
         <meta name="description" content="">
-        <?php include($root."/include/head.html"); ?>
+        <?php include($root."include/head.html"); ?>
     </head>
     <body>
 
-        <?php include($root."/include/header.html"); ?>
+        <?php include($root."include/header.html"); ?>
 
         <div class="main-container">
             <div class="main wrapper clearfix">
@@ -73,7 +73,7 @@ require("../connectdb.php");
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-        <?php include($root."/include/footer.html"); ?>
+        <?php include($root."include/footer.html"); ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
