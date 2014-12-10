@@ -1,6 +1,5 @@
 <?php
     $root = $_SERVER['DOCUMENT_ROOT']."/";
-	require("connectdb.php");
 ?>
 
 <!DOCTYPE html>
@@ -23,23 +22,23 @@
             <div class="main wrapper clearfix">
                 <h1>Booking Information</h1>
 
-                <form action="">
+                <form action="insert.php" method="get">
 
                 <div class="status">
                     <h2>Status</h2>
                     <table>
                         <tr>
                             <td>
-                                <input type="checkbox" class="checkbox" value="statusUrgent1"> Urgent
+                                <input type="checkbox" class="checkbox" value="1" name="urgent"> Urgent
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="statusPendiente"><span id="bdIndex">Pending Reply</span></label>
-                                <select id="statusPendiente">
-                                    <option value="statusPendiente2">Client</option>
-                                    <option value="statusPendiente3" selected="selected">None</option>
+                                <label for="statusPendiente">Pending Reply</label>
+                                <select id="statusPendiente" name="statusPendiente">
+                                    <option value="None" selected="selected">None</option>
+                                    <option value="Client">Client</option>
                                 </select>
                             </td>
                         </tr>
@@ -55,19 +54,19 @@
                         <table>
                             <tr>
                                 <td>
-                                    <label for="nombre">Name</label> 
+                                    <label for="name">Name</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="name"/>
+                                    <input type="text" id="name" name="name"/>
                                 </td>
                             </tr>
                             
                             <tr>
                                 <td>
-                                    <label for="apellidos">Last Name</label>
+                                    <label for="lastName">Last Name</label>
                                 </td>
                                 <td> 
-                                    <input type="text" id="last_name"/>
+                                    <input type="text" id="lastName" name="lastName"/>
                                 </td>
                             </tr>
 
@@ -76,7 +75,7 @@
                                     <label for="email">E-Mail</label> 
                                 </td>
                                 <td>
-                                    <input type="text" id="email" />
+                                    <input type="text" id="email" name="email" />
                                 </td>
                             </tr>
 
@@ -85,10 +84,10 @@
                                     <label for="season">Season</label>
                                 </td>
                                 <td>
-                                    <select id="season">
-                                        <option value="season1">Hight Season</option>
-                                        <option value="season2">Low Season</option>
-                                        <option value="season3" selected="selected">None</option>
+                                    <select id="season" name="season">
+                                        <option value="None" selected="selected">None</option>
+                                        <option value="High Season">Hight Season</option>
+                                        <option value="Low Season">Low Season</option>
                                     </select>
                                 </td>
                             </tr>
@@ -99,12 +98,12 @@
                                 </td>
 
                                 <td>
-                                    <select id="company">
-                                        <option value="company1">Contact Form</option>
-                                        <option value="company2">Hostelworld</option>
-                                        <option value="company3">Hostelbookers</option>
-                                        <option value="company4">Booking.com</option>
-                                        <option value="company5" selected="selected">None</option>
+                                    <select id="company" name="bookingCompany">
+                                        <option value="None" selected="selected">None</option>
+                                        <option value="CF">Contact Form</option>
+                                        <option value="HW">Hostelworld</option>
+                                        <option value="HB">Hostelbookers</option>
+                                        <option value="Booking">Booking.com</option>
                                     </select>
                                 </td>
                             </tr>
@@ -114,7 +113,7 @@
                                     <label for="bookingNum">Booking Number</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="bookingNum"/>
+                                    <input type="text" id="bookingNum" name="bookingNum"/>
                                 </td>
                             </tr>
 
@@ -126,37 +125,37 @@
 
                             <tr>
                                 <td>
-                                    <label for="n_people">Number of People</label>
+                                    <label for="numPeople">Number of People</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="n_people"/>
+                                    <input type="text" id="numPeople" name="numPeople"/>
                                 </td>
                             </tr>
                             
                             <tr>
                                 <td>
-                                    <label for="n_nights">Number of Nights</label>
+                                    <label for="numNights">Number of Nights</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="n_nights"/>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <label for="chk_in_date">Check in Date</label>
-                                </td>
-                                <td>
-                                    <input name="checkInDate" id="chk_in_date" type="date" />
+                                    <input type="text" id="numNights" name="numNights"/>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td>
-                                    <label for="chk_in_hour">Check in Hour</label>
+                                    <label for="chkInDate">Check in Date</label>
                                 </td>
                                 <td>
-                                    <input name="checkIn" id="chk_in_hour" type="number" />
+                                    <input name="chkInDate" id="chkInDate" type="date" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="chkInHour">Check in Hour</label>
+                                </td>
+                                <td>
+                                    <input name="chkInHour" id="chkInHour" type="number" />
                                 </td>
                             </tr>
 
@@ -175,29 +174,25 @@
                                 </td>
 
                                 <td>
-                                    <select id="privates">
-                                        <option value="private1">1- Standard Single w/Shared Bathroom</option>
-                                        <option value="private2">1- Standard Single with Terrace</option>
-                                        <option value="private3">1- Deluxe Single with Private Balcony</option>
-                                        <option value="private4">1- Superior Single with Private Terrace and Volcano View</option>
-                                        <option value="private5">1- Superior Single with Private Balcony and Volcano View</option>
+                                    <select id="privates" name="privates">
+                                        <option value="None" selected="selected">None</option>
 
-                                        <option value="private6">2- Standard Double w/Shared Bathroom</option>
-                                        <option value="private7">2- Standard Double with Terrace</option>
-                                        <option value="private8">2- Deluxe Double with Private Balcony</option>
-                                        <option value="private9">2- Superior Double with Private Terrace and Volcano View</option>
-                                        <option value="private10">2- Superior Double with Private Balcony and Volcano View</option>
+                                        <option value="Single w/Shared Bathroom">1- Standard Single w/Shared Bathroom</option>
+                                        <option value="Single with Terrace">1- Standard Single with Terrace</option>
+                                        <option value="Single with Private Balcony">1- Deluxe Single with Balcony</option>
 
-                                        <option value="private11">3- Deluxe Triple with Private Balcony</option>
-                                        <option value="private12">3- Standard Triple with Terrace</option>
+                                        <option value="Double w/Shared Bathroom">2- Standard Double w/Shared Bathroom</option>
+                                        <option value="Double with Terrace">2- Standard Double with Terrace</option>
+                                        <option value="Double with Balcony">2- Deluxe Double with Balcony</option>
 
-                                        <option value="private13">4- Deluxe Quad with Private Balcony</option>
+                                        <option value="Triple with Balcony">3- Deluxe Triple with Balcony</option>
+                                        <option value="Triple with Terrace">3- Standard Triple with Terrace</option>
 
-                                        <option value="private14">5- Deluxe Penta with Private Balcony</option>
+                                        <option value="Quad with Balcony">4- Deluxe Quad with Balcony</option>
 
-                                        <option value="private15">Multiple Rooms (check Additional Info)</option>
+                                        <option value="Penta with Balcony">5- Deluxe Penta with Balcony</option>
 
-                                        <option value="private16" selected="selected">None</option>
+<!--                                        <option value="private15">Multiple Rooms (check Additional Info)</option>-->
                                     </select>
                                 </td>
                             </tr>
@@ -239,10 +234,10 @@
 
                             <tr>
                                 <td>
-                                    <label for="price">Price (US $)</label>
+                                    <label for="roomPrice">Price (US $)</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="price"/>
+                                    <input type="number" id="roomPrice" name="roomPrice"/>
                                 </td>
                             </tr>
 
@@ -252,12 +247,11 @@
                                 </td>
 
                                 <td>
-                                    <select id="paymentType">
-                                        <option value="paymentType1">Per Room/Per Night</option>
-                                        <option value="paymentType2">Per Person/Per Night</option>
-                                        <option value="paymentType3">Total</option>
-                                        <option value="paymentType4" selected="selected">None</option>
-
+                                    <select id="paymentType" name="paymentType">
+                                        <option value="None" selected="selected">None</option>
+                                        <option value="PR/PN">Per Room/Per Night</option>
+                                        <option value="PP/PN">Per Person/Per Night</option>
+                                        <option value="Total">Total</option>
                                     </select>
                                 </td>
                             </tr>
@@ -307,11 +301,11 @@
                                     <label for="typeCC">Type of Credit Card</label>
                                 </td>
                                 <td>
-                                    <select id="typeCC">
-                                        <option value="typeCC1">Visa</option>
-                                        <option value="typeCC2">Mastercard</option>
-                                        <option value="typeCC3">American Express</option>
-                                        <option value="typeCC4" selected="selected">None</option>
+                                    <select id="typeCC" name="typeCC">
+                                        <option value="None" selected="selected">None</option>
+                                        <option value="Visa">Visa</option>
+                                        <option value="Mastercard">Mastercard</option>
+                                        <option value="American Express">American Express</option>
                                     </select>
                                 </td>
                             </tr>
@@ -321,7 +315,7 @@
                                     <label for="ccName">Name</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="ccName"/>
+                                    <input type="text" id="ccName" name="ccName"/>
                                 </td>
                             </tr>
 
@@ -330,7 +324,7 @@
                                     <label for="ccNum">Number</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="ccNum"/>
+                                    <input type="number" id="ccNum" name="ccNum"/>
                                 </td>
                             </tr>
 
@@ -339,7 +333,7 @@
                                     <label for="ccExp">Expires</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="ccExp"/>
+                                    <input type="number" id="ccExp" name="ccExp"/>
                                 </td>
                             </tr>
 
@@ -348,7 +342,7 @@
                                     <label for="ccSecurity">Security Code</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="ccSecurity"/>
+                                    <input type="number" id="ccSecurity" name="ccSecurity"/>
                                 </td>
                             </tr>
 
@@ -367,7 +361,7 @@
                                     <label for="shuttleDate">Date</label>
                                 </td>
                                 <td>
-                                    <input name="checkInDate" id="shuttleDate" type="date" />
+                                    <input name="shuttleDate" id="shuttleDate" type="date" />
                                 </td>
                             </tr>
 
@@ -376,10 +370,10 @@
                                     <label for="shuttleWhen">When</label>
                                 </td>
                                 <td>
-                                    <select id="shuttleWhen">
-                                        <option value="shuttleWhen1">In</option>
-                                        <option value="shuttleWhen2">Out</option>
-                                        <option value="shuttleWhen3" selected="selected">None</option>
+                                    <select id="shuttleWhen" name="shuttleWhen">
+                                        <option value="None" selected="selected">None</option>
+                                        <option value="In">In</option>
+                                        <option value="Out">Out</option>
                                     </select>
                                 </td>
                             </tr>
@@ -389,7 +383,7 @@
                                     <label for="shuttleTime">Pick-up Time</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="shuttleTime"/>
+                                    <input type="number" id="shuttleTime" name="shuttleTime"/>
                                     <!-- NECESITO K SEA FORMAT EN HORAS -->
                                 </td>
                             </tr>
@@ -399,7 +393,7 @@
                                     <label for="shuttleFrom">From</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="shuttleFrom"/>
+                                    <input type="text" id="shuttleFrom" name="shuttleFrom"/>
                                 </td>
                             </tr>
 
@@ -408,16 +402,16 @@
                                     <label for="shuttleTo">To</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="shuttleTo"/>
+                                    <input type="text" id="shuttleTo" name="shuttleTo"/>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td>
-                                    <label for="shuttlePeople">Number of People</label>
+                                    <label for="shuttleNumPeople">Number of People</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="shuttlePeople"/>
+                                    <input type="number" id="shuttleNumPeople" name="shuttleNumPeople"/>
                                 </td>
                             </tr>
 
@@ -426,7 +420,7 @@
                                     <label for="shuttlePrice">Price Per Person</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="shuttlePrice"/>
+                                    <input type="number" id="shuttlePrice" name="shuttlePrice"/>
                                 </td>
                             </tr>
 
@@ -436,11 +430,11 @@
                                 </td>
 
                                 <td>
-                                    <select id="shuttleCompany">
-                                        <option value="shuttleCompany1">Interbus</option>
-                                        <option value="shuttleCompany2">Ride CR</option>
-                                        <option value="shuttleCompany3">Private</option>
-                                        <option value="shuttleCompany4" selected="selected">None</option>
+                                    <select id="shuttleCompany" name="shuttleCompany">
+                                        <option value="None" selected="selected">None</option>
+                                        <option value="Interbus">Interbus</option>
+                                        <option value="Ride CR">Ride CR</option>
+                                        <option value="Private Shuttle">Private Shuttle</option>
                                     </select>
                                 </td>
                             </tr>
@@ -458,11 +452,11 @@
                                 </td>
 
                                 <td>
-                                    <select id="flightAirport">
-                                        <option value="flightAirport1">SJO Airport</option>
-                                        <option value="flightAirport2">Liberia</option>
-                                        <option value="flightAirport3">Arenal Airport</option>
-                                        <option value="flightAirport4" selected="selected">None</option>
+                                    <select id="flightAirport" name="flightAirport">
+                                        <option value="SJO's Airport">SJO's Airport</option>
+                                        <option value="Liberia's Airport">Liberia's Airport</option>
+                                        <option value="Arenal's Airport">Arenal's Airport</option>
+                                        <option value="None" selected="selected">None</option>
                                     </select>
                                 </td>
                             </tr>
@@ -472,16 +466,16 @@
                                     <label for="flightCompany">Airline Company</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="flightCompany"/>
+                                    <input type="text" id="flightCompany" name="flightCompany"/>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>
+                                <td>lastName
                                     <label for="flightNum">Flight Number</label>
                                 </td>
                                 <td>
-                                    <input type="number" id="flightNum"/>
+                                    <input type="number" id="flightNum" name="flightNum"/>
                                 </td>
                             </tr>
 
@@ -490,7 +484,7 @@
                                     <label for="flightFrom">From</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="flightFrom"/>
+                                    <input type="text" id="flightFrom" name="flightFrom"/>
                                 </td>
                             </tr>
 
@@ -499,7 +493,7 @@
                                     <label for="flightTime">Arrival Time</label>
                                 </td>
                                 <td>
-                                    <input type="text" id="flightTime"/>
+                                    <input type="text" id="flightTime" name="flightTime"/>
                                 </td>
                             </tr>
 
@@ -511,7 +505,7 @@
                 <div class="section4 clearfix">
                      <div class="aditionalInfo">
                         <H2>Aditional Information</H2>
-                        <textarea name="aditional_info" id="info" accesskey="o"></textarea>
+                        <textarea name="aditionalInfo" id="info" accesskey="o"></textarea>
 
 
 <!--                         PARA LA SEGUNDA VERSION!!!! -->
@@ -527,16 +521,16 @@
                         <H2>Person Reponsible</H2>
                         <tr>
                             <td>
-                                <label for="madeBy">Booked by</label>
+                                <label for="bookedBy">Booked by</label>
                             </td>
                             <td>
-                                <select id="madeBy">
-                                    <option value="madeBy1">Allan</option>
-                                    <option value="madeBy2">Alfredo</option>
-                                    <option value="madeBy3">Diego</option>
-                                    <option value="madeBy4">Mieles</option>
-                                    <option value="madeBy5">Nacho</option>
-                                    <option value="madeBy6" selected="selected">None</option>
+                                <select id="bookedBy" name="bookedBy">
+                                    <option value="None" selected="selected">None</option>
+                                    <option value="Allan">Allan</option>
+                                    <option value="Alfredo">Alfredo</option>
+                                    <option value="Diego">Diego</option>
+                                    <option value="Mieles">Mieles</option>
+                                    <option value="Nacho">Nacho</option>
                                 </select>
                             </td>
                         </tr>

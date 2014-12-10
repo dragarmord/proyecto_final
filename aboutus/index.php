@@ -1,6 +1,5 @@
 <?php
-$root = $_SERVER['DOCUMENT_ROOT']."/";
-require("../connectdb.php");
+    $root = $_SERVER['DOCUMENT_ROOT']."/";
 ?>
 
 <!DOCTYPE html>

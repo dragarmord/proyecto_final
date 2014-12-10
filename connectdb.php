@@ -13,7 +13,7 @@ if (!$sel){
 echo( "Error, Esta base de datos no existe");
 exit();
 }
-//@mysql_query("");
+@mysql_query("INSERT INTO TReservas (name, lastName, email, season, bookingCompany, numNights) VALUES ('Franco', 'Wayne', 'dakota34@gmail.com', 'season', 'Hostelworld', 3)");
 
 
 
