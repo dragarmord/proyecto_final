@@ -1,43 +1,15 @@
 <?php
 
-//$urgent = '';
-//$statusPendiente = '';
-//$name = 'Alfre';
-//$lastName = 'Arrieta';
-//$email = 'email@email.com';
-//$season = 'season high';
-//$bookingCompany = 'booking company exmaple';
-//$bookingNum = 'AG2341AGT22';
-//$numPeople = 29;
-//$numNights = 4;
-//$chkInDate = '';
-//$chkInHour = '';
-//$privates = '';
-//$roomPrice = 189;
-//$paymentType = 'PP';
-//$typeCC = 'MasterCard';
-//$ccName = 'El nombre de la tarjeta';
-//$ccNum = '123123124121';
-//$ccExp = '12/2023';
-//$ccSecurity = '1231';
-//$shuttleDate = '';
-//$shuttleWhen = '';
-//$shuttleTime = '';
-//$shuttleFrom = '';
-//$shuttleTo = '';
-//$shuttleNumPeople = '';
-//$shuttlePrice = '';
-//$shuttleCompany = '';
-//$flightAirport = '';
-//$flightCompany = '';
-//$flightNum = '';
-//$flightFrom = '';
-//$flightTime = '';
-//$aditionalInfo = 'Aditional Info';
-//$bookedBy = 'Diego';
 
+if (isset($_GET['urgent'])){
+    $urgent = $_GET['urgent'];
 
-$urgent = $_GET['urgent'];
+}else {
+    $urgent = 0;
+}
+
+//echo $urgent;
+
 $statusPendiente = $_GET['statusPendiente'];
 $name = $_GET['name'];
 $lastName = $_GET['lastName'];
@@ -95,14 +67,15 @@ $query = "INSERT INTO TReservas (urgent, statusPendiente, name, lastName, email,
     "shuttleDate, shuttleWhen, shuttleFrom, shuttleTo, shuttleNumPeople, shuttlePrice, shuttleCompany, shuttleTime, flightAirport, ".
     "flightCompany, flightNum, flightFrom, flightTime, aditionalInfo, bookedBy) ".
 
-    "VALUES (".$urgent.", '".$statusPendiente."', '".$name."', '".$lastName."', '".$email."', '".$season."', '".$bookingCompany."', '".$bookingNum."', '".$numPeople.
+    "VALUES ('".$urgent."', '".$statusPendiente."', '".$name."', '".$lastName."', '".$email."', '".$season."', '".$bookingCompany."', '".$bookingNum."', '".$numPeople.
     "', '".$numNights."', '".$chkInDate."', '".$chkInHour."', '".$privates."', '".$roomPrice."', '".$paymentType."', '".$typeCC.
     "', '".$ccName."', '".$ccNum."', '".$ccExp."', '".$ccSecurity."', '".$shuttleDate."', '".$shuttleWhen."', '".$shuttleFrom.
     "', '".$shuttleTo."', '".$shuttleNumPeople."', '".$shuttlePrice."', '".$shuttleCompany."', '".$shuttleTime."', '".$flightAirport."', '".$flightCompany.
     "', '".$flightNum."', '".$flightFrom."', '".$flightTime."', '".$aditionalInfo."', '".$bookedBy."')";
 
-echo $query;
+//echo $query;
 @mysql_query($query);
+
 
 /*
 if ($name != '') {
@@ -112,6 +85,7 @@ if ($name != '') {
 
 
 
-
+header("Location: /bookings/index.php");
+die();
 
 ?>

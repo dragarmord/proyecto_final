@@ -24,12 +24,12 @@
                 <h1>Site Map</h1>
                 <div class="hostelLinks">
                     <ul>
-                        <li><a href="../index.php">Home</a></li>
-                        <li><a href="../aboutus/index.php">About Us</a></li>
-                        <li><a href="../gallery/index.php">Gallery</a></li>
+                        <li><a href="/index.php">Home</a></li>
+                        <li><a href="/aboutus/index.php">About Us</a></li>
+                        <li><a href="/gallery/index.php">Gallery</a></li>
                         <li><a href="http://mail.yahoo.com">Y! Mail</a></li>
                         <li><a href="https://login.live.com/login.srf?wa=wsignin1.0&ct=1417324993&rver=6.1.6206.0&sa=1&ntprob=-1&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2F%3Fowa%3D1%26owasuffix%3Dowa%252f&id=64855&snsc=1&cbcxt=mail">Outlook Mail</a></li>
-                        <li><a href="#">Bookings</a></li>
+                        <li><a href="/bookings/index.php">Bookings</a></li>
                         <li><a href="http://costaricahostelnetwork.com/">Costa Rica Hostel Network</a></li>
                         <li><a href="http://www.bedsndrinks.com/">Beds n' Drinks (South Beach)</a></li>
                         <li><a href="http://arenalbackpackersresort.com/">Arenal Backpackers Resort</a></li>

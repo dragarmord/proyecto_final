@@ -3404,6 +3404,316 @@ nav a:hover {
   content: "\f20c";
 }
 
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/* line 2, ../scss/files/_jquery.fancybox.scss */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+}
+
+/* line 20, ../scss/files/_jquery.fancybox.scss */
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020;
+}
+
+/* line 27, ../scss/files/_jquery.fancybox.scss */
+.fancybox-skin {
+  position: relative;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 37, ../scss/files/_jquery.fancybox.scss */
+.fancybox-opened {
+  z-index: 8030;
+}
+
+/* line 41, ../scss/files/_jquery.fancybox.scss */
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* line 47, ../scss/files/_jquery.fancybox.scss */
+.fancybox-outer, .fancybox-inner {
+  position: relative;
+}
+
+/* line 51, ../scss/files/_jquery.fancybox.scss */
+.fancybox-inner {
+  overflow: hidden;
+}
+
+/* line 55, ../scss/files/_jquery.fancybox.scss */
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 59, ../scss/files/_jquery.fancybox.scss */
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+/* line 67, ../scss/files/_jquery.fancybox.scss */
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 73, ../scss/files/_jquery.fancybox.scss */
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 78, ../scss/files/_jquery.fancybox.scss */
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url("/img/fancybox_sprite.png");
+}
+
+/* line 82, ../scss/files/_jquery.fancybox.scss */
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060;
+}
+
+/* line 94, ../scss/files/_jquery.fancybox.scss */
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url("/img/fancybox_loading.gif") center center no-repeat;
+}
+
+/* line 100, ../scss/files/_jquery.fancybox.scss */
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+}
+
+/* line 110, ../scss/files/_jquery.fancybox.scss */
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url("/img/blank.gif");
+  /* helps IE */
+  -webkit-tap-highlight-color: transparent;
+  z-index: 8040;
+}
+
+/* line 122, ../scss/files/_jquery.fancybox.scss */
+.fancybox-prev {
+  left: 0;
+}
+
+/* line 126, ../scss/files/_jquery.fancybox.scss */
+.fancybox-next {
+  right: 0;
+}
+
+/* line 130, ../scss/files/_jquery.fancybox.scss */
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+
+/* line 141, ../scss/files/_jquery.fancybox.scss */
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px;
+}
+
+/* line 146, ../scss/files/_jquery.fancybox.scss */
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px;
+}
+
+/* line 151, ../scss/files/_jquery.fancybox.scss */
+.fancybox-nav:hover span {
+  visibility: visible;
+}
+
+/* line 155, ../scss/files/_jquery.fancybox.scss */
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important;
+}
+
+/* Overlay helper */
+/* line 167, ../scss/files/_jquery.fancybox.scss */
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto;
+}
+
+/* line 172, ../scss/files/_jquery.fancybox.scss */
+.fancybox-lock body {
+  overflow: hidden !important;
+}
+
+/* line 176, ../scss/files/_jquery.fancybox.scss */
+.fancybox-lock-test {
+  overflow-y: hidden !important;
+}
+
+/* line 180, ../scss/files/_jquery.fancybox.scss */
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url("/img/fancybox_overlay.png");
+}
+
+/* line 190, ../scss/files/_jquery.fancybox.scss */
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 196, ../scss/files/_jquery.fancybox.scss */
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Title helper */
+/* line 203, ../scss/files/_jquery.fancybox.scss */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+}
+
+/* line 211, ../scss/files/_jquery.fancybox.scss */
+.fancybox-opened .fancybox-title {
+  visibility: visible;
+}
+
+/* line 215, ../scss/files/_jquery.fancybox.scss */
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center;
+}
+
+/* line 224, ../scss/files/_jquery.fancybox.scss */
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+/* line 240, ../scss/files/_jquery.fancybox.scss */
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* line 246, ../scss/files/_jquery.fancybox.scss */
+.fancybox-title-inside-wrap {
+  padding-top: 10px;
+}
+
+/* line 250, ../scss/files/_jquery.fancybox.scss */
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 265, ../scss/files/_jquery.fancybox.scss */
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url("/img/fancybox_sprite@2x.png");
+    background-size: 44px 152px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+
+  /* line 270, ../scss/files/_jquery.fancybox.scss */
+  #fancybox-loading div {
+    background-image: url("/img/fancybox_loading@2x.gif");
+    background-size: 24px 24px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -3459,15 +3769,24 @@ h1, h2, h3 {
   display: none;
 }
 
-/* line 52, ../scss/files/_author.scss */
+/* line 53, ../scss/files/_author.scss */
+nav a:hover {
+  color: #ffffff;
+  background-color: rgba(16, 16, 16, 0.84);
+  text-decoration: none;
+}
+/* line 59, ../scss/files/_author.scss */
 nav ul {
   padding: 0em;
   margin: 0em;
   list-style-type: none;
   display: none;
 }
-
-/* line 59, ../scss/files/_author.scss */
+/* line 64, ../scss/files/_author.scss */
+nav ul li {
+  border-bottom: 1px solid #fff;
+}
+/* line 66, ../scss/files/_author.scss */
 nav ul li a {
   font-family: sans-serif;
   display: inline-block;
@@ -3475,26 +3794,13 @@ nav ul li a {
   padding: 0.625em;
 }
 
-/* line 68, ../scss/files/_author.scss */
-nav ul li {
-  border-bottom: 1px solid #fff;
-}
-
-/* line 72, ../scss/files/_author.scss */
-nav a:hover {
-  color: #ffffff;
-  background-color: rgba(16, 16, 16, 0.84);
-  text-decoration: none;
-}
-
-/* line 79, ../scss/files/_author.scss */
+/* line 104, ../scss/files/_author.scss */
 .menu-bar-mobile {
   /*background-color: black;*/
   border-bottom: 1px solid #fff;
   overflow: auto;
 }
-
-/* line 85, ../scss/files/_author.scss */
+/* line 108, ../scss/files/_author.scss */
 .menu-bar-mobile span {
   color: white;
   font-weight: bold;
@@ -3503,12 +3809,12 @@ nav a:hover {
   padding: 0.625em;
 }
 
-/* line 94, ../scss/files/_author.scss */
+/* line 126, ../scss/files/_author.scss */
 .toggle-btn {
   cursor: pointer;
 }
 
-/* line 99, ../scss/files/_author.scss */
+/* line 131, ../scss/files/_author.scss */
 .pull-left {
   float: left;
   display: block;
@@ -3518,12 +3824,12 @@ nav a:hover {
     Search Bar
    +++++++++++++++++++++++++++++++++++++++++++
 */
-/* line 109, ../scss/files/_author.scss */
+/* line 141, ../scss/files/_author.scss */
 #tfnewsearch {
   display: none;
 }
 
-/* line 113, ../scss/files/_author.scss */
+/* line 145, ../scss/files/_author.scss */
 .tftextinput {
   margin: 0;
   font-size: 0.875em;
@@ -3533,7 +3839,7 @@ nav a:hover {
   margin-top: 0.625em;
 }
 
-/* line 122, ../scss/files/_author.scss */
+/* line 154, ../scss/files/_author.scss */
 .tfbutton {
   margin: 0;
   padding: 0.313em 0.938em;
@@ -3552,9 +3858,8 @@ nav a:hover {
   border-top-right-radius: 5px 5px;
   border-bottom-right-radius: 5px 5px;
 }
-
-/* line 139, ../scss/files/_author.scss */
-.tfbutton:hover {
+/* line 170, ../scss/files/_author.scss */
+.tfbutton :hover {
   text-decoration: none;
   background: #007ead;
   background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
@@ -3562,13 +3867,13 @@ nav a:hover {
 }
 
 /* Fixes submit button height problem in Firefox */
-/* line 146, ../scss/files/_author.scss */
+/* line 185, ../scss/files/_author.scss */
 .tfbutton::-moz-focus-inner {
   border: 0;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* line 153, ../scss/files/_author.scss */
+/* line 192, ../scss/files/_author.scss */
 h1 {
   margin: 0;
   padding: 0.67em 0 1.563em 0;
@@ -3576,46 +3881,45 @@ h1 {
   border-bottom: #282727 solid;
 }
 
-/* line 160, ../scss/files/_author.scss */
+/* line 199, ../scss/files/_author.scss */
 p {
   color: #282727;
 }
 
-/* line 164, ../scss/files/_author.scss */
+/* line 215, ../scss/files/_author.scss */
 .hostelLinks ul li a, .hostelLinks a {
   text-decoration: none;
   color: #282727;
 }
-
-/* line 169, ../scss/files/_author.scss */
+/* line 219, ../scss/files/_author.scss */
 .hostelLinks ul li a:hover, .hostelLinks a:hover {
   color: #e44d26;
   font-weight: bold;
 }
 
-/* line 174, ../scss/files/_author.scss */
+/* line 226, ../scss/files/_author.scss */
 .status, .section1, .section2, .section3 {
   padding-bottom: 1.250em;
   border-bottom: solid #282727;
 }
 
-/* line 179, ../scss/files/_author.scss */
+/* line 231, ../scss/files/_author.scss */
 .section1 > div, .section2 > div, .section3 > div, .aditionalInfo, .bookedBy {
   float: left;
   width: 100%;
 }
 
-/* line 184, ../scss/files/_author.scss */
+/* line 237, ../scss/files/_author.scss */
 input {
-  width: 10.938em;
+  width: 8.5em;
 }
 
-/* line 188, ../scss/files/_author.scss */
+/* line 241, ../scss/files/_author.scss */
 select {
-  width: 11.188em;
+  width: 8.5em;
 }
 
-/* line 193, ../scss/files/_author.scss */
+/* line 246, ../scss/files/_author.scss */
 .checkbox {
   width: 1.250em;
 }
@@ -3623,7 +3927,7 @@ select {
 /*.checkbox_beds {
     float: left;
 }*/
-/* line 201, ../scss/files/_author.scss */
+/* line 254, ../scss/files/_author.scss */
 #info {
   width: 16.875em;
   min-height: 6.250em;
@@ -3632,77 +3936,196 @@ select {
 /*#attachment {
     width: 400px;
 }*/
-/* line 210, ../scss/files/_author.scss */
+/* line 263, ../scss/files/_author.scss */
 .btns {
   margin-top: 1.875em;
 }
-
-/* line 214, ../scss/files/_author.scss */
+/* line 265, ../scss/files/_author.scss */
 .btns input {
   width: 4.688em;
 }
 
-/* line 218, ../scss/files/_author.scss */
+/* line 274, ../scss/files/_author.scss */
 footer {
   text-align: center;
 }
-
-/* line 223, ../scss/files/_author.scss */
+/* line 276, ../scss/files/_author.scss */
+footer div {
+  display: inline-block;
+}
+/* line 279, ../scss/files/_author.scss */
 footer div div {
   padding: 1.250em 0 1.250em 0;
 }
-
-/* line 227, ../scss/files/_author.scss */
-.footer1 {
-  border-bottom-color: #282727;
-  border-bottom-style: solid;
-}
-
-/* line 232, ../scss/files/_author.scss */
-footer h2 {
-  margin: 0;
-  text-align: center;
-}
-
-/* line 237, ../scss/files/_author.scss */
-footer h2 a {
-  color: #282727;
-  text-decoration: none;
-}
-
-/* line 243, ../scss/files/_author.scss */
+/* line 281, ../scss/files/_author.scss */
 footer div div a {
   color: white;
   text-decoration: none;
   list-style-type: none;
   padding: 0 0.250em;
 }
-
-/* line 250, ../scss/files/_author.scss */
-footer div {
-  display: inline-block;
+/* line 288, ../scss/files/_author.scss */
+footer h2 {
+  margin: 0;
+  text-align: center;
+}
+/* line 291, ../scss/files/_author.scss */
+footer h2 a {
+  color: #282727;
+  text-decoration: none;
 }
 
-/* line 256, ../scss/files/_author.scss */
+/* line 303, ../scss/files/_author.scss */
+.footer1 {
+  border-bottom-color: #282727;
+  border-bottom-style: solid;
+}
+
+/* line 331, ../scss/files/_author.scss */
 #imgContainer div {
   width: 29%;
   float: left;
   margin: 2%;
 }
-
-/* line 262, ../scss/files/_author.scss */
+/* line 336, ../scss/files/_author.scss */
 #imgContainer img {
   max-width: 100%;
 }
 
-/* line 266, ../scss/files/_author.scss */
+/* line 351, ../scss/files/_author.scss */
 #imgAboutUs {
   width: 100%;
 }
-
-/* line 270, ../scss/files/_author.scss */
+/* line 353, ../scss/files/_author.scss */
 #imgAboutUs img {
   max-width: 100%;
+}
+
+/* line 368, ../scss/files/_author.scss */
+table a:link {
+  color: #666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 373, ../scss/files/_author.scss */
+table a:visited {
+  color: #999999;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 378, ../scss/files/_author.scss */
+table a:active,
+table a:hover {
+  color: #bd5a35;
+  text-decoration: underline;
+}
+
+/* line 383, ../scss/files/_author.scss */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  text-shadow: 1px 1px 0px #fff;
+  background: #eaebec;
+  margin-top: 20px;
+  border: #ccc 1px solid;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 2px #d1d1d1;
+  -webkit-box-shadow: 0 1px 2px #d1d1d1;
+  box-shadow: 0 1px 2px #d1d1d1;
+}
+
+/* line 401, ../scss/files/_author.scss */
+.generalInfo1 table, .generalInfo1 table {
+  margin-top: 0;
+}
+
+/* line 405, ../scss/files/_author.scss */
+table th {
+  padding: 21px 22px 22px 22px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+  background: -moz-linear-gradient(top, #ededed, #ebebeb);
+}
+
+/* line 413, ../scss/files/_author.scss */
+table th:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* line 417, ../scss/files/_author.scss */
+table tr:first-child th:first-child {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+/* line 422, ../scss/files/_author.scss */
+table tr:first-child th:last-child {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 427, ../scss/files/_author.scss */
+table tr {
+  text-align: center;
+  padding-left: 20px;
+}
+
+/* line 431, ../scss/files/_author.scss */
+table td:first-child {
+  text-align: left;
+  padding-left: 20px;
+  border-left: 0;
+}
+
+/* line 436, ../scss/files/_author.scss */
+table td {
+  padding: 18px;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+  background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+/* line 445, ../scss/files/_author.scss */
+table tr.even td {
+  background: #f6f6f6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+  background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+}
+
+/* line 450, ../scss/files/_author.scss */
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* line 453, ../scss/files/_author.scss */
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 458, ../scss/files/_author.scss */
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* line 463, ../scss/files/_author.scss */
+table tr:hover td {
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+  background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
 }
 
 /* ==========================================================================
@@ -3799,15 +4222,25 @@ footer div {
   nav li:last-child a {
       margin-right: 0;
   }*/
+  /* line 28, ../scss/files/_mediaQueries.scss */
+  table {
+    margin-left: 20px;
+  }
+
+  /* line 32, ../scss/files/_mediaQueries.scss */
+  h2 {
+    margin-left: 20px;
+  }
+
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 30, ../scss/files/_mediaQueries.scss */
+  /* line 39, ../scss/files/_mediaQueries.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
 
-  /* line 34, ../scss/files/_mediaQueries.scss */
+  /* line 43, ../scss/files/_mediaQueries.scss */
   #info {
     width: 400px;
     min-height: 100px;
@@ -3817,22 +4250,22 @@ footer div {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 47, ../scss/files/_mediaQueries.scss */
+  /* line 60, ../scss/files/_mediaQueries.scss */
   .img-320 {
     display: none;
   }
 
-  /* line 51, ../scss/files/_mediaQueries.scss */
+  /* line 64, ../scss/files/_mediaQueries.scss */
   .img-768 {
     display: block;
   }
 
-  /* line 55, ../scss/files/_mediaQueries.scss */
+  /* line 68, ../scss/files/_mediaQueries.scss */
   .section1 > div, .section2 > div, .section3 > div, .aditionalInfo, .bookedBy {
     width: 50%;
   }
 
-  /* line 61, ../scss/files/_mediaQueries.scss */
+  /* line 74, ../scss/files/_mediaQueries.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
@@ -3849,17 +4282,17 @@ footer div {
       float: right;
       width: 38%;
   }*/
-  /* line 79, ../scss/files/_mediaQueries.scss */
+  /* line 92, ../scss/files/_mediaQueries.scss */
   .menu-bar-mobile {
     display: none;
   }
 
-  /* line 83, ../scss/files/_mediaQueries.scss */
+  /* line 96, ../scss/files/_mediaQueries.scss */
   nav ul {
     display: block !important;
   }
 
-  /* line 87, ../scss/files/_mediaQueries.scss */
+  /* line 100, ../scss/files/_mediaQueries.scss */
   nav ul li {
     display: inline-block;
     border-bottom: none;
@@ -3868,34 +4301,39 @@ footer div {
   /* ============
       WIDE: Main
      ============ */
-  /* line 99, ../scss/files/_mediaQueries.scss */
+  /* line 112, ../scss/files/_mediaQueries.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
-  /* line 104, ../scss/files/_mediaQueries.scss */
+  /* line 117, ../scss/files/_mediaQueries.scss */
   .main aside {
     float: right;
     width: 28%;
   }
 
-  /* line 109, ../scss/files/_mediaQueries.scss */
+  /* line 122, ../scss/files/_mediaQueries.scss */
   footer div div a:hover {
     background-color: rgba(16, 16, 16, 0.84);
     padding: 1.250em 0.250em;
   }
 
-  /* line 114, ../scss/files/_mediaQueries.scss */
+  /* line 127, ../scss/files/_mediaQueries.scss */
   footer h2 a:hover {
     color: #ffffff;
+  }
+
+  /* line 131, ../scss/files/_mediaQueries.scss */
+  fore {
+    content: "Arbitrary Data";
   }
 }
 @media only screen and (min-width: 1140px) {
   /* ===============
       Maximal Width
      =============== */
-  /* line 127, ../scss/files/_mediaQueries.scss */
+  /* line 143, ../scss/files/_mediaQueries.scss */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */

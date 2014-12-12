@@ -40,6 +40,7 @@
                    <p>We love what we do, and don't doubt of going out of our way to show you this country and what makes us so proud, but most important to see you leaving with a smile on your face.</p>
 
                     <p>E-Mail: arenalhostel@yahoo.com</p>
+<!--                    <p>Room Reservations: http://www.hostelworld.com/hosteldetails.php/Arenal-Backpackers-Resort/La-Fortuna/14268?propNum=14268</p>-->
 
 
                     <h3><a href="http://www.bedsndrinks.com/">Beds n' Drinks (South Beach)</a></h3>
@@ -48,6 +49,7 @@
                     <p>It's also an ultra modern hostel with keyless locks on the doors, a fully restored marble lobby, and professionally designed private and dorm rooms! The hostel is fun, energetic, and most importantly, it is located just a few steps from the beach and lincoln road.</p>
 
                     <p>E-Mail: book@bedsndrinks.com</p>
+<!--                    <p>Room Reservations: http://www.bedsndrinks.com/reservations.php</p>-->
 
 
                     <h3><a href="http://alajuelabackpackers.com/">Alajuela Backpackers</a></h3>
@@ -55,12 +57,15 @@
                     <p>"Located in the heart of Alajuela (1 minute from the Juan Santamaria Intl Airport), this hostel (more like a hotel) is the perfect place to either recharge batteries before heading home, or touching base before heading to the playground this country is." - Lonely planet</p>
 
                     <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+<!--                    <p>Room Reservations: http://alajuelabackpackers.com/costa-rica-affordable-hostel-reservations.php</p>-->
 
                     <h3><a href="http://monteverdebackpackers.com/">Monteverde Backpackers</a></h3>
 
                     <p>We're located at the Monteverde Cloud Forest... "Is clean and friendly, with comfty beds and some of the hottest, most powerful showers we have ever felt. Ahhh!. You'll also find a communal kitchen, outdoor patio and TV lounge." - Lonely planet</p>
 
                     <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+<!--                    <p>Room Reservations: http://reservations.bookhostels.com/monteverdebackpackers.com/</p>-->
+
 
 
                     <h3><a href="http://hosteltoruma.com/">Hostel Toruma</a></h3>
@@ -68,6 +73,7 @@
                     <p>"It's a mellow spot, popular with chilled-out solo travelers, couples and young families. One of the best budget deals in San Jose." - Lonely Planet</p>
 
                     <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+<!--                    <p>Room Reservations: http://reservations.bookhostels.com/hosteltoruma.com/</p>-->
 
 
                     <h3><a href="http://hostelpangea.com/">Hostel Pangea</a></h3>
@@ -75,6 +81,7 @@
                     <p>"This is a party spot. But the rooms are clean, the mattresses firm and the bathrooms freshly remodeled. Of all the amenities, it is the restaurant in particular, that is godsend -open until midnight-, it serves lip-smacking quesadillas, veggie burritos and what has to be San Jose's tastiest burgers." - Lonely Planet</p>
 
                     <p>E-Mail: costaricahostelnetwork@gmail.com</p>
+<!--                    <p>Room Reservations: http://hostelpangea.com/reservations.php</p>-->
 
 
                     <div id="imgAboutUs"><img src="../img/abr-26.jpg" alt="friendly people"/></div>

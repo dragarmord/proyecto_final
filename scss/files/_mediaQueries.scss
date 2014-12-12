@@ -24,6 +24,15 @@
   nav li:last-child a {
       margin-right: 0;
   }*/
+
+  table {
+    margin-left: 20px;
+  }
+
+  h2 {
+    margin-left: 20px;
+  }
+
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
@@ -35,6 +44,10 @@
     width: 400px;
     min-height: 100px;
   }
+
+//  .noMobile {
+//    display: block;
+//  }
 
 }
 
@@ -114,6 +127,9 @@
   footer h2 a:hover {
     color: #ffffff;
   }
+
+fore { content: "Arbitrary Data"; }
+
 
 }
 
